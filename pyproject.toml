@@ -13,7 +13,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "gcp-robotics"
-version = "2.1.0"
+version = "2.2.0"
 description = "Golden Codex Protocol — Sub-millisecond robotic perception via hash-indexed Spatial Kinematic Blueprints"
 readme = "README.md"
 license = "Apache-2.0"
@@ -70,6 +70,9 @@ api = [
 llm = [
     "anthropic>=0.18",
 ]
+sim = [
+    "pybullet>=3.2",
+]
 ros2 = []  # ROS2 (rclpy) is installed separately via colcon / rosdep
 dev = [
     "pytest>=7.0",
@@ -77,7 +80,7 @@ dev = [
     "ruff",
 ]
 all = [
-    "gcp-robotics[api,llm,dev]",
+    "gcp-robotics[api,llm,sim,dev]",
 ]
 
 # ── Entry points / scripts ───────────────────────────────────────────
