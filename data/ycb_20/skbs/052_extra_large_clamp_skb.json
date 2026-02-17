@@ -1,0 +1,121 @@
+{
+  "@context": {
+    "gcp": "https://schema.metavolve.io/gcp/2.0/",
+    "ros2": "https://docs.ros.org/en/humble/",
+    "schema": "https://schema.org/"
+  },
+  "schema_version": "2.0-GCP-ROBOTICS",
+  "agent": "Batch_Registry_Builder",
+  "timestamps": {
+    "state_encountered": "2026-02-17T10:11:32.346136Z",
+    "schema_generated": "2026-02-17T10:11:32.346136Z",
+    "promoted_to_fast_path": null
+  },
+  "identifiers": {
+    "uuid": "2314c90b-c3a0-4e39-a687-d17b4b16aefb",
+    "artifact_id": "geo-052_extra_large_clamp",
+    "codex_id": "GCP-GEO-052_EXTRA_LARGE_CLAMP"
+  },
+  "triple_hash": {
+    "content_hash_sha256": "0ee17d5bab6708a31943219c7234868e6dae3c1582fef482b6d7555fc9bf0178",
+    "ppp_256bit": "e1a72aff9a592aff8a592aff8a592aff20e52aff20e7027921e7807021e29160",
+    "soulmark_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "fast_path_dhash_64bit": "0596969696969606"
+  },
+  "layer_1_provenance": {
+    "manufacturer": "Standard Evaluation Template",
+    "model_no": "052_extra_large_clamp",
+    "serial": "geo-052_extra_large_clamp-2314c90b",
+    "calibration_date": null,
+    "maintenance_schedule": null,
+    "workspace_zone": "evaluation_tabletop",
+    "lighting_condition": null,
+    "source_dataset": "geometric_primitives_v1",
+    "enrichment_timestamp": "2026-02-17T10:11:32.346136Z",
+    "enrichment_model_version": "batch-registry-builder-1.0"
+  },
+  "layer_2_semantic_topology": {
+    "object_classification": "Tool",
+    "physical_properties": {
+      "estimated_mass_kg": 0.202,
+      "center_of_mass_offset": null,
+      "friction_coefficient": 0.35,
+      "dimensions": {
+        "x": 0.052,
+        "y": 0.155,
+        "z": 0.206
+      }
+    },
+    "material_graph": {
+      "primary_material": "metal_plastic",
+      "component_count": 1
+    },
+    "kinematic_joints": null,
+    "perceptual_signature": {
+      "dhash_hex": "0596969696969606",
+      "phash_hex": "e12e9e2a9e2a9e2a",
+      "color_histogram_hash": "0xEAEAEAC0CDD8BECBD7EBEBEBF0F0F092B1CB8FAECAF0F0F0F0F0F092B1CB8FAECAF0F0F0F0F0F0C3D1DDC2D0DCF0F0F0",
+      "keyframe_timestamp_ms": null,
+      "variance_tolerance_pct": 5.0,
+      "region_of_interest": null,
+      "optical_flow_stable": true
+    },
+    "related_skbs": []
+  },
+  "layer_3_affordance": {
+    "action_schema": {
+      "primitive_id": "PICK_VERTICAL",
+      "parameters": {
+        "target_pose_relative": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": -0.05,
+          "qx": 0.0,
+          "qy": 0.0,
+          "qz": 0.0,
+          "qw": 1.0
+        },
+        "force_profile": {
+          "max_grip_newtons": 10.0,
+          "lateral_torque_limit_nm": 1.0,
+          "compliance_stiffness": null
+        },
+        "speed_profile": "FINE"
+      },
+      "validation_signature": null,
+      "execution_narrative": [],
+      "failure_modes": [
+        "Object slipped during grasp",
+        "Orientation error > 15 deg ()"
+      ]
+    }
+  },
+  "layer_4_safety": {
+    "hazard_class": "NONE",
+    "ppe_required": [],
+    "regulatory_certifications": [],
+    "operating_constraints": {
+      "max_speed_mm_s": 250.0,
+      "max_force_n": 10.0,
+      "restricted_zones": []
+    },
+    "enterprise_license": null,
+    "export_restrictions": null
+  },
+  "recovery_metadata": null,
+  "amendments": [],
+  "telemetry": {
+    "target_controller": "franka_panda_eval_cell",
+    "transport_layer": "ROS2_Humble",
+    "end_effector": "franka_hand",
+    "slow_path_latency_ms": 0.0,
+    "fast_path_latency_ms": 0.0,
+    "pipeline_status": "FAST_PATH_ACTIVE"
+  },
+  "control_loop": {
+    "vision_hashed": true,
+    "vlm_inference_completed": false,
+    "digital_twin_simulated": false,
+    "ram_cache_updated": true
+  }
+}

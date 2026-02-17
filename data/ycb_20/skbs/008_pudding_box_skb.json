@@ -1,0 +1,121 @@
+{
+  "@context": {
+    "gcp": "https://schema.metavolve.io/gcp/2.0/",
+    "ros2": "https://docs.ros.org/en/humble/",
+    "schema": "https://schema.org/"
+  },
+  "schema_version": "2.0-GCP-ROBOTICS",
+  "agent": "Batch_Registry_Builder",
+  "timestamps": {
+    "state_encountered": "2026-02-17T10:11:32.345041Z",
+    "schema_generated": "2026-02-17T10:11:32.345041Z",
+    "promoted_to_fast_path": null
+  },
+  "identifiers": {
+    "uuid": "2a88d434-2a62-4254-86b9-c1dd6f9e151f",
+    "artifact_id": "geo-008_pudding_box",
+    "codex_id": "GCP-GEO-008_PUDDING_BOX"
+  },
+  "triple_hash": {
+    "content_hash_sha256": "61385e061dff66e076c9c1c6939220f0eb976030773faea26eb26e1be5ad09b5",
+    "ppp_256bit": "a5962dfc9f792dfc8f7d2dfc259621bc219601b06192d392da39d212da31d213",
+    "soulmark_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "fast_path_dhash_64bit": "5286868686868668"
+  },
+  "layer_1_provenance": {
+    "manufacturer": "Standard Evaluation Template",
+    "model_no": "008_pudding_box",
+    "serial": "geo-008_pudding_box-2a88d434",
+    "calibration_date": null,
+    "maintenance_schedule": null,
+    "workspace_zone": "evaluation_tabletop",
+    "lighting_condition": null,
+    "source_dataset": "geometric_primitives_v1",
+    "enrichment_timestamp": "2026-02-17T10:11:32.345041Z",
+    "enrichment_model_version": "batch-registry-builder-1.0"
+  },
+  "layer_2_semantic_topology": {
+    "object_classification": "Rigid_Body_Graspable",
+    "physical_properties": {
+      "estimated_mass_kg": 0.187,
+      "center_of_mass_offset": null,
+      "friction_coefficient": 0.5,
+      "dimensions": {
+        "x": 0.033,
+        "y": 0.089,
+        "z": 0.127
+      }
+    },
+    "material_graph": {
+      "primary_material": "cardboard",
+      "component_count": 1
+    },
+    "kinematic_joints": null,
+    "perceptual_signature": {
+      "dhash_hex": "5286868686868668",
+      "phash_hex": "a52d9f2d8f2d2521",
+      "color_histogram_hash": "0xE6E6E6DDD8D0DCD7CFEFEFEFF0F0F0CCB38DCBB088F0F0F0F0F0F0CCB38DCBB088F0F0F0F0F0F0E5DED5E4DED4F0F0F0",
+      "keyframe_timestamp_ms": null,
+      "variance_tolerance_pct": 5.0,
+      "region_of_interest": null,
+      "optical_flow_stable": true
+    },
+    "related_skbs": []
+  },
+  "layer_3_affordance": {
+    "action_schema": {
+      "primitive_id": "PICK_VERTICAL",
+      "parameters": {
+        "target_pose_relative": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": -0.05,
+          "qx": 0.0,
+          "qy": 0.0,
+          "qz": 0.0,
+          "qw": 1.0
+        },
+        "force_profile": {
+          "max_grip_newtons": 10.0,
+          "lateral_torque_limit_nm": 0.9,
+          "compliance_stiffness": null
+        },
+        "speed_profile": "FINE"
+      },
+      "validation_signature": null,
+      "execution_narrative": [],
+      "failure_modes": [
+        "Object slipped during grasp",
+        "Orientation error > 15 deg ()"
+      ]
+    }
+  },
+  "layer_4_safety": {
+    "hazard_class": "NONE",
+    "ppe_required": [],
+    "regulatory_certifications": [],
+    "operating_constraints": {
+      "max_speed_mm_s": 250.0,
+      "max_force_n": 10.0,
+      "restricted_zones": []
+    },
+    "enterprise_license": null,
+    "export_restrictions": null
+  },
+  "recovery_metadata": null,
+  "amendments": [],
+  "telemetry": {
+    "target_controller": "franka_panda_eval_cell",
+    "transport_layer": "ROS2_Humble",
+    "end_effector": "franka_hand",
+    "slow_path_latency_ms": 0.0,
+    "fast_path_latency_ms": 0.0,
+    "pipeline_status": "FAST_PATH_ACTIVE"
+  },
+  "control_loop": {
+    "vision_hashed": true,
+    "vlm_inference_completed": false,
+    "digital_twin_simulated": false,
+    "ram_cache_updated": true
+  }
+}

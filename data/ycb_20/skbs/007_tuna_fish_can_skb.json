@@ -1,0 +1,121 @@
+{
+  "@context": {
+    "gcp": "https://schema.metavolve.io/gcp/2.0/",
+    "ros2": "https://docs.ros.org/en/humble/",
+    "schema": "https://schema.org/"
+  },
+  "schema_version": "2.0-GCP-ROBOTICS",
+  "agent": "Batch_Registry_Builder",
+  "timestamps": {
+    "state_encountered": "2026-02-17T10:11:32.344948Z",
+    "schema_generated": "2026-02-17T10:11:32.344948Z",
+    "promoted_to_fast_path": null
+  },
+  "identifiers": {
+    "uuid": "4547c765-fd66-44ab-b770-c23f183ac790",
+    "artifact_id": "geo-007_tuna_fish_can",
+    "codex_id": "GCP-GEO-007_TUNA_FISH_CAN"
+  },
+  "triple_hash": {
+    "content_hash_sha256": "8541b4ba8ac5ceff4c4cf1a65987a87c1d6a933cc5b4426e4aee708d658b680a",
+    "ppp_256bit": "b86c32ee92c632ee386c01ce69bcc990c392c991ed31cd91ed31cf11cf93fc31",
+    "soulmark_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "fast_path_dhash_64bit": "9c6c961717166002"
+  },
+  "layer_1_provenance": {
+    "manufacturer": "Standard Evaluation Template",
+    "model_no": "007_tuna_fish_can",
+    "serial": "geo-007_tuna_fish_can-4547c765",
+    "calibration_date": null,
+    "maintenance_schedule": null,
+    "workspace_zone": "evaluation_tabletop",
+    "lighting_condition": null,
+    "source_dataset": "geometric_primitives_v1",
+    "enrichment_timestamp": "2026-02-17T10:11:32.344948Z",
+    "enrichment_model_version": "batch-registry-builder-1.0"
+  },
+  "layer_2_semantic_topology": {
+    "object_classification": "Rigid_Body_Graspable",
+    "physical_properties": {
+      "estimated_mass_kg": 0.171,
+      "center_of_mass_offset": null,
+      "friction_coefficient": 0.3,
+      "dimensions": {
+        "x": 0.085,
+        "y": 0.085,
+        "z": 0.033
+      }
+    },
+    "material_graph": {
+      "primary_material": "metal",
+      "component_count": 1
+    },
+    "kinematic_joints": null,
+    "perceptual_signature": {
+      "dhash_hex": "9c6c961717166002",
+      "phash_hex": "b8339333391369cd",
+      "color_histogram_hash": "0xE2E2E2E2E2E2EAEAEAF0F0F0ECECECB9B9C0B9B9C0EBEBEBECECECB7B7BEB7B7BEEBEBEBF0F0F0F0F0F0F0F0F0F0F0F0",
+      "keyframe_timestamp_ms": null,
+      "variance_tolerance_pct": 5.0,
+      "region_of_interest": null,
+      "optical_flow_stable": true
+    },
+    "related_skbs": []
+  },
+  "layer_3_affordance": {
+    "action_schema": {
+      "primitive_id": "PICK_VERTICAL",
+      "parameters": {
+        "target_pose_relative": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": -0.05,
+          "qx": 0.0,
+          "qy": 0.0,
+          "qz": 0.0,
+          "qw": 1.0
+        },
+        "force_profile": {
+          "max_grip_newtons": 10.0,
+          "lateral_torque_limit_nm": 0.9,
+          "compliance_stiffness": null
+        },
+        "speed_profile": "FINE"
+      },
+      "validation_signature": null,
+      "execution_narrative": [],
+      "failure_modes": [
+        "Object slipped during grasp",
+        "Orientation error > 15 deg ()"
+      ]
+    }
+  },
+  "layer_4_safety": {
+    "hazard_class": "NONE",
+    "ppe_required": [],
+    "regulatory_certifications": [],
+    "operating_constraints": {
+      "max_speed_mm_s": 250.0,
+      "max_force_n": 10.0,
+      "restricted_zones": []
+    },
+    "enterprise_license": null,
+    "export_restrictions": null
+  },
+  "recovery_metadata": null,
+  "amendments": [],
+  "telemetry": {
+    "target_controller": "franka_panda_eval_cell",
+    "transport_layer": "ROS2_Humble",
+    "end_effector": "franka_hand",
+    "slow_path_latency_ms": 0.0,
+    "fast_path_latency_ms": 0.0,
+    "pipeline_status": "FAST_PATH_ACTIVE"
+  },
+  "control_loop": {
+    "vision_hashed": true,
+    "vlm_inference_completed": false,
+    "digital_twin_simulated": false,
+    "ram_cache_updated": true
+  }
+}

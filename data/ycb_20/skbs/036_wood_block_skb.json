@@ -1,0 +1,121 @@
+{
+  "@context": {
+    "gcp": "https://schema.metavolve.io/gcp/2.0/",
+    "ros2": "https://docs.ros.org/en/humble/",
+    "schema": "https://schema.org/"
+  },
+  "schema_version": "2.0-GCP-ROBOTICS",
+  "agent": "Batch_Registry_Builder",
+  "timestamps": {
+    "state_encountered": "2026-02-17T10:11:32.345872Z",
+    "schema_generated": "2026-02-17T10:11:32.345872Z",
+    "promoted_to_fast_path": null
+  },
+  "identifiers": {
+    "uuid": "381e643f-6dae-4350-9b7e-f9f78014cf46",
+    "artifact_id": "geo-036_wood_block",
+    "codex_id": "GCP-GEO-036_WOOD_BLOCK"
+  },
+  "triple_hash": {
+    "content_hash_sha256": "28c8884ef2a3301339ec09549ed0934072175dc27140fdbc01f8c8f762c67fab",
+    "ppp_256bit": "b93d13bf939733bf9397333f9397313f393d313f393c113e283cc2066028c200",
+    "soulmark_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "fast_path_dhash_64bit": "1896969696969602"
+  },
+  "layer_1_provenance": {
+    "manufacturer": "Standard Evaluation Template",
+    "model_no": "036_wood_block",
+    "serial": "geo-036_wood_block-381e643f",
+    "calibration_date": null,
+    "maintenance_schedule": null,
+    "workspace_zone": "evaluation_tabletop",
+    "lighting_condition": null,
+    "source_dataset": "geometric_primitives_v1",
+    "enrichment_timestamp": "2026-02-17T10:11:32.345872Z",
+    "enrichment_model_version": "batch-registry-builder-1.0"
+  },
+  "layer_2_semantic_topology": {
+    "object_classification": "Rigid_Body_Graspable",
+    "physical_properties": {
+      "estimated_mass_kg": 0.729,
+      "center_of_mass_offset": null,
+      "friction_coefficient": 0.45,
+      "dimensions": {
+        "x": 0.085,
+        "y": 0.085,
+        "z": 0.2
+      }
+    },
+    "material_graph": {
+      "primary_material": "wood",
+      "component_count": 1
+    },
+    "kinematic_joints": null,
+    "perceptual_signature": {
+      "dhash_hex": "1896969696969602",
+      "phash_hex": "b913933393339333",
+      "color_histogram_hash": "0xE7E7E7C7B7A2CDBCA7EDECECEBEBEBA57D4BA57D4BE9E8E7EBEBEBA57D4BA57D4BE9E8E7EDEDEDCDBBA6CDBBA6EDECEC",
+      "keyframe_timestamp_ms": null,
+      "variance_tolerance_pct": 5.0,
+      "region_of_interest": null,
+      "optical_flow_stable": true
+    },
+    "related_skbs": []
+  },
+  "layer_3_affordance": {
+    "action_schema": {
+      "primitive_id": "PICK_VERTICAL",
+      "parameters": {
+        "target_pose_relative": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": -0.05,
+          "qx": 0.0,
+          "qy": 0.0,
+          "qz": 0.0,
+          "qw": 1.0
+        },
+        "force_profile": {
+          "max_grip_newtons": 29.2,
+          "lateral_torque_limit_nm": 3.6,
+          "compliance_stiffness": null
+        },
+        "speed_profile": "FINE"
+      },
+      "validation_signature": null,
+      "execution_narrative": [],
+      "failure_modes": [
+        "Object slipped during grasp",
+        "Orientation error > 15 deg ()"
+      ]
+    }
+  },
+  "layer_4_safety": {
+    "hazard_class": "NONE",
+    "ppe_required": [],
+    "regulatory_certifications": [],
+    "operating_constraints": {
+      "max_speed_mm_s": 250.0,
+      "max_force_n": 29.2,
+      "restricted_zones": []
+    },
+    "enterprise_license": null,
+    "export_restrictions": null
+  },
+  "recovery_metadata": null,
+  "amendments": [],
+  "telemetry": {
+    "target_controller": "franka_panda_eval_cell",
+    "transport_layer": "ROS2_Humble",
+    "end_effector": "franka_hand",
+    "slow_path_latency_ms": 0.0,
+    "fast_path_latency_ms": 0.0,
+    "pipeline_status": "FAST_PATH_ACTIVE"
+  },
+  "control_loop": {
+    "vision_hashed": true,
+    "vlm_inference_completed": false,
+    "digital_twin_simulated": false,
+    "ram_cache_updated": true
+  }
+}

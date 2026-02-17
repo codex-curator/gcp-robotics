@@ -1,0 +1,121 @@
+{
+  "@context": {
+    "gcp": "https://schema.metavolve.io/gcp/2.0/",
+    "ros2": "https://docs.ros.org/en/humble/",
+    "schema": "https://schema.org/"
+  },
+  "schema_version": "2.0-GCP-ROBOTICS",
+  "agent": "Batch_Registry_Builder",
+  "timestamps": {
+    "state_encountered": "2026-02-17T10:11:32.344725Z",
+    "schema_generated": "2026-02-17T10:11:32.344725Z",
+    "promoted_to_fast_path": null
+  },
+  "identifiers": {
+    "uuid": "97d3355e-ac4a-4533-acc2-3d4290167d36",
+    "artifact_id": "geo-005_tomato_soup_can",
+    "codex_id": "GCP-GEO-005_TOMATO_SOUP_CAN"
+  },
+  "triple_hash": {
+    "content_hash_sha256": "cd3ac5eed9243a8b1c8f458d9672dd18e3f34c2f24e77177576c3088df85f042",
+    "ppp_256bit": "a1e12d6f8f5e2def8f4f29ef29ed296f21e5d25ed296d210d212d290d210d290",
+    "soulmark_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "fast_path_dhash_64bit": "7396969696969668"
+  },
+  "layer_1_provenance": {
+    "manufacturer": "Standard Evaluation Template",
+    "model_no": "005_tomato_soup_can",
+    "serial": "geo-005_tomato_soup_can-97d3355e",
+    "calibration_date": null,
+    "maintenance_schedule": null,
+    "workspace_zone": "evaluation_tabletop",
+    "lighting_condition": null,
+    "source_dataset": "geometric_primitives_v1",
+    "enrichment_timestamp": "2026-02-17T10:11:32.344725Z",
+    "enrichment_model_version": "batch-registry-builder-1.0"
+  },
+  "layer_2_semantic_topology": {
+    "object_classification": "Rigid_Body_Graspable",
+    "physical_properties": {
+      "estimated_mass_kg": 0.349,
+      "center_of_mass_offset": null,
+      "friction_coefficient": 0.3,
+      "dimensions": {
+        "x": 0.068,
+        "y": 0.068,
+        "z": 0.102
+      }
+    },
+    "material_graph": {
+      "primary_material": "metal",
+      "component_count": 1
+    },
+    "kinematic_joints": null,
+    "perceptual_signature": {
+      "dhash_hex": "7396969696969668",
+      "phash_hex": "a12f8f2d8f2d2929",
+      "color_histogram_hash": "0xE6E6E6DBDBDCDCDCDCEEEEEEF0F0F0A7A7B0A5A5AEF0F0F0F0F0F0A7A7B0A5A5AEF0F0F0F0F0F0E1E1E2E0E0E2F0F0F0",
+      "keyframe_timestamp_ms": null,
+      "variance_tolerance_pct": 5.0,
+      "region_of_interest": null,
+      "optical_flow_stable": true
+    },
+    "related_skbs": []
+  },
+  "layer_3_affordance": {
+    "action_schema": {
+      "primitive_id": "PICK_VERTICAL",
+      "parameters": {
+        "target_pose_relative": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": -0.05,
+          "qx": 0.0,
+          "qy": 0.0,
+          "qz": 0.0,
+          "qw": 1.0
+        },
+        "force_profile": {
+          "max_grip_newtons": 14.0,
+          "lateral_torque_limit_nm": 1.7,
+          "compliance_stiffness": null
+        },
+        "speed_profile": "FINE"
+      },
+      "validation_signature": null,
+      "execution_narrative": [],
+      "failure_modes": [
+        "Object slipped during grasp",
+        "Orientation error > 15 deg ()"
+      ]
+    }
+  },
+  "layer_4_safety": {
+    "hazard_class": "NONE",
+    "ppe_required": [],
+    "regulatory_certifications": [],
+    "operating_constraints": {
+      "max_speed_mm_s": 250.0,
+      "max_force_n": 14.0,
+      "restricted_zones": []
+    },
+    "enterprise_license": null,
+    "export_restrictions": null
+  },
+  "recovery_metadata": null,
+  "amendments": [],
+  "telemetry": {
+    "target_controller": "franka_panda_eval_cell",
+    "transport_layer": "ROS2_Humble",
+    "end_effector": "franka_hand",
+    "slow_path_latency_ms": 0.0,
+    "fast_path_latency_ms": 0.0,
+    "pipeline_status": "FAST_PATH_ACTIVE"
+  },
+  "control_loop": {
+    "vision_hashed": true,
+    "vlm_inference_completed": false,
+    "digital_twin_simulated": false,
+    "ram_cache_updated": true
+  }
+}

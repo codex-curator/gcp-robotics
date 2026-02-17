@@ -1,0 +1,213 @@
+{
+  "batch_report": {
+    "template": "ycb_20",
+    "generated_at": "2026-02-17T10:11:33.258773+00:00",
+    "total_objects": 20,
+    "total_elapsed_s": 9.75,
+    "stages_completed": 6,
+    "completed": 20,
+    "success_rate": 100.0
+  },
+  "objects": {
+    "001_chips_can": {
+      "name": "Pringles Chips Can",
+      "status": "registered",
+      "soulmark": "44136fa355b3678a...",
+      "registered_count": 3,
+      "lookup_verified": true,
+      "lookup_time_ms": 0.00021599407773464918,
+      "hash_time_ms": 510.66,
+      "enrich_time_ms": 2.78
+    },
+    "002_master_chef_can": {
+      "name": "Master Chef Coffee Can",
+      "status": "registered",
+      "soulmark": "44136fa355b3678a...",
+      "registered_count": 3,
+      "lookup_verified": true,
+      "lookup_time_ms": 0.000166997779160738,
+      "hash_time_ms": 220.07,
+      "enrich_time_ms": 0.77
+    },
+    "003_cracker_box": {
+      "name": "Cheez-It Cracker Box",
+      "status": "registered",
+      "soulmark": "44136fa355b3678a...",
+      "registered_count": 3,
+      "lookup_verified": true,
+      "lookup_time_ms": 0.00019599974621087313,
+      "hash_time_ms": 231.34,
+      "enrich_time_ms": 0.1
+    },
+    "004_sugar_box": {
+      "name": "Domino Sugar Box",
+      "status": "registered",
+      "soulmark": "44136fa355b3678a...",
+      "registered_count": 3,
+      "lookup_verified": true,
+      "lookup_time_ms": 0.00017799902707338333,
+      "hash_time_ms": 178.94,
+      "enrich_time_ms": 0.08
+    },
+    "005_tomato_soup_can": {
+      "name": "Campbell's Tomato Soup Can",
+      "status": "registered",
+      "soulmark": "44136fa355b3678a...",
+      "registered_count": 3,
+      "lookup_verified": true,
+      "lookup_time_ms": 0.00015100522432476282,
+      "hash_time_ms": 147.41,
+      "enrich_time_ms": 0.07
+    },
+    "006_mustard_bottle": {
+      "name": "French's Mustard Bottle",
+      "status": "registered",
+      "soulmark": "44136fa355b3678a...",
+      "registered_count": 3,
+      "lookup_verified": true,
+      "lookup_time_ms": 0.0001629960024729371,
+      "hash_time_ms": 206.05,
+      "enrich_time_ms": 0.07
+    },
+    "007_tuna_fish_can": {
+      "name": "StarKist Tuna Can",
+      "status": "registered",
+      "soulmark": "44136fa355b3678a...",
+      "registered_count": 3,
+      "lookup_verified": true,
+      "lookup_time_ms": 0.00022900348994880915,
+      "hash_time_ms": 168.29,
+      "enrich_time_ms": 0.06
+    },
+    "008_pudding_box": {
+      "name": "Jell-O Pudding Box",
+      "status": "registered",
+      "soulmark": "44136fa355b3678a...",
+      "registered_count": 3,
+      "lookup_verified": true,
+      "lookup_time_ms": 0.00020100560504943132,
+      "hash_time_ms": 175.78,
+      "enrich_time_ms": 0.07
+    },
+    "009_gelatin_box": {
+      "name": "Jell-O Gelatin Box",
+      "status": "registered",
+      "soulmark": "44136fa355b3678a...",
+      "registered_count": 3,
+      "lookup_verified": true,
+      "lookup_time_ms": 0.0002220040187239647,
+      "hash_time_ms": 148.66,
+      "enrich_time_ms": 0.06
+    },
+    "010_potted_meat_can": {
+      "name": "Hormel Potted Meat Can",
+      "status": "registered",
+      "soulmark": "44136fa355b3678a...",
+      "registered_count": 3,
+      "lookup_verified": true,
+      "lookup_time_ms": 0.0001320004230365157,
+      "hash_time_ms": 120.19,
+      "enrich_time_ms": 0.06
+    },
+    "011_banana": {
+      "name": "Banana (plastic)",
+      "status": "registered",
+      "soulmark": "44136fa355b3678a...",
+      "registered_count": 3,
+      "lookup_verified": true,
+      "lookup_time_ms": 0.00019000435713678598,
+      "hash_time_ms": 118.95,
+      "enrich_time_ms": 0.06
+    },
+    "019_pitcher_base": {
+      "name": "Pitcher Base",
+      "status": "registered",
+      "soulmark": "44136fa355b3678a...",
+      "registered_count": 3,
+      "lookup_verified": true,
+      "lookup_time_ms": 0.00020499282982200384,
+      "hash_time_ms": 154.27,
+      "enrich_time_ms": 0.06
+    },
+    "021_bleach_cleanser": {
+      "name": "Soft Scrub Cleanser",
+      "status": "registered",
+      "soulmark": "44136fa355b3678a...",
+      "registered_count": 3,
+      "lookup_verified": true,
+      "lookup_time_ms": 0.00016999547369778156,
+      "hash_time_ms": 214.91,
+      "enrich_time_ms": 0.06
+    },
+    "024_bowl": {
+      "name": "Bowl",
+      "status": "registered",
+      "soulmark": "44136fa355b3678a...",
+      "registered_count": 3,
+      "lookup_verified": true,
+      "lookup_time_ms": 0.00018299033399671316,
+      "hash_time_ms": 141.33,
+      "enrich_time_ms": 0.06
+    },
+    "025_mug": {
+      "name": "Mug",
+      "status": "registered",
+      "soulmark": "44136fa355b3678a...",
+      "registered_count": 3,
+      "lookup_verified": true,
+      "lookup_time_ms": 0.00014799297787249088,
+      "hash_time_ms": 163.81,
+      "enrich_time_ms": 0.06
+    },
+    "035_power_drill": {
+      "name": "Power Drill",
+      "status": "registered",
+      "soulmark": "44136fa355b3678a...",
+      "registered_count": 3,
+      "lookup_verified": true,
+      "lookup_time_ms": 0.00011900556273758411,
+      "hash_time_ms": 176.7,
+      "enrich_time_ms": 0.05
+    },
+    "036_wood_block": {
+      "name": "Wood Block Set",
+      "status": "registered",
+      "soulmark": "44136fa355b3678a...",
+      "registered_count": 3,
+      "lookup_verified": true,
+      "lookup_time_ms": 0.00023200118448585272,
+      "hash_time_ms": 162.36,
+      "enrich_time_ms": 0.06
+    },
+    "037_scissors": {
+      "name": "Scissors",
+      "status": "registered",
+      "soulmark": "44136fa355b3678a...",
+      "registered_count": 3,
+      "lookup_verified": true,
+      "lookup_time_ms": 0.0001860025804489851,
+      "hash_time_ms": 130.8,
+      "enrich_time_ms": 0.06
+    },
+    "040_large_marker": {
+      "name": "Large Marker",
+      "status": "registered",
+      "soulmark": "44136fa355b3678a...",
+      "registered_count": 3,
+      "lookup_verified": true,
+      "lookup_time_ms": 0.00018200080376118422,
+      "hash_time_ms": 136.12,
+      "enrich_time_ms": 0.05
+    },
+    "052_extra_large_clamp": {
+      "name": "Extra Large Clamp",
+      "status": "registered",
+      "soulmark": "44136fa355b3678a...",
+      "registered_count": 3,
+      "lookup_verified": true,
+      "lookup_time_ms": 0.00017500133253633976,
+      "hash_time_ms": 179.27,
+      "enrich_time_ms": 0.06
+    }
+  }
+}

@@ -1,0 +1,213 @@
+{
+  "batch_report": {
+    "template": "ycb_20",
+    "generated_at": "2026-02-17T09:10:52.250382+00:00",
+    "total_objects": 20,
+    "total_elapsed_s": 0.31,
+    "stages_completed": 6,
+    "completed": 20,
+    "success_rate": 100.0
+  },
+  "objects": {
+    "001_chips_can": {
+      "name": "Pringles Chips Can",
+      "status": "registered",
+      "soulmark": "DRY_RUN...",
+      "registered_count": 0,
+      "lookup_verified": false,
+      "lookup_time_ms": 0,
+      "hash_time_ms": 0,
+      "enrich_time_ms": 0
+    },
+    "002_master_chef_can": {
+      "name": "Master Chef Coffee Can",
+      "status": "registered",
+      "soulmark": "DRY_RUN...",
+      "registered_count": 0,
+      "lookup_verified": false,
+      "lookup_time_ms": 0,
+      "hash_time_ms": 0,
+      "enrich_time_ms": 0
+    },
+    "003_cracker_box": {
+      "name": "Cheez-It Cracker Box",
+      "status": "registered",
+      "soulmark": "DRY_RUN...",
+      "registered_count": 0,
+      "lookup_verified": false,
+      "lookup_time_ms": 0,
+      "hash_time_ms": 0,
+      "enrich_time_ms": 0
+    },
+    "004_sugar_box": {
+      "name": "Domino Sugar Box",
+      "status": "registered",
+      "soulmark": "DRY_RUN...",
+      "registered_count": 0,
+      "lookup_verified": false,
+      "lookup_time_ms": 0,
+      "hash_time_ms": 0,
+      "enrich_time_ms": 0
+    },
+    "005_tomato_soup_can": {
+      "name": "Campbell's Tomato Soup Can",
+      "status": "registered",
+      "soulmark": "DRY_RUN...",
+      "registered_count": 0,
+      "lookup_verified": false,
+      "lookup_time_ms": 0,
+      "hash_time_ms": 0,
+      "enrich_time_ms": 0
+    },
+    "006_mustard_bottle": {
+      "name": "French's Mustard Bottle",
+      "status": "registered",
+      "soulmark": "DRY_RUN...",
+      "registered_count": 0,
+      "lookup_verified": false,
+      "lookup_time_ms": 0,
+      "hash_time_ms": 0,
+      "enrich_time_ms": 0
+    },
+    "007_tuna_fish_can": {
+      "name": "StarKist Tuna Can",
+      "status": "registered",
+      "soulmark": "DRY_RUN...",
+      "registered_count": 0,
+      "lookup_verified": false,
+      "lookup_time_ms": 0,
+      "hash_time_ms": 0,
+      "enrich_time_ms": 0
+    },
+    "008_pudding_box": {
+      "name": "Jell-O Pudding Box",
+      "status": "registered",
+      "soulmark": "DRY_RUN...",
+      "registered_count": 0,
+      "lookup_verified": false,
+      "lookup_time_ms": 0,
+      "hash_time_ms": 0,
+      "enrich_time_ms": 0
+    },
+    "009_gelatin_box": {
+      "name": "Jell-O Gelatin Box",
+      "status": "registered",
+      "soulmark": "DRY_RUN...",
+      "registered_count": 0,
+      "lookup_verified": false,
+      "lookup_time_ms": 0,
+      "hash_time_ms": 0,
+      "enrich_time_ms": 0
+    },
+    "010_potted_meat_can": {
+      "name": "Hormel Potted Meat Can",
+      "status": "registered",
+      "soulmark": "DRY_RUN...",
+      "registered_count": 0,
+      "lookup_verified": false,
+      "lookup_time_ms": 0,
+      "hash_time_ms": 0,
+      "enrich_time_ms": 0
+    },
+    "011_banana": {
+      "name": "Banana (plastic)",
+      "status": "registered",
+      "soulmark": "DRY_RUN...",
+      "registered_count": 0,
+      "lookup_verified": false,
+      "lookup_time_ms": 0,
+      "hash_time_ms": 0,
+      "enrich_time_ms": 0
+    },
+    "019_pitcher_base": {
+      "name": "Pitcher Base",
+      "status": "registered",
+      "soulmark": "DRY_RUN...",
+      "registered_count": 0,
+      "lookup_verified": false,
+      "lookup_time_ms": 0,
+      "hash_time_ms": 0,
+      "enrich_time_ms": 0
+    },
+    "021_bleach_cleanser": {
+      "name": "Soft Scrub Cleanser",
+      "status": "registered",
+      "soulmark": "DRY_RUN...",
+      "registered_count": 0,
+      "lookup_verified": false,
+      "lookup_time_ms": 0,
+      "hash_time_ms": 0,
+      "enrich_time_ms": 0
+    },
+    "024_bowl": {
+      "name": "Bowl",
+      "status": "registered",
+      "soulmark": "DRY_RUN...",
+      "registered_count": 0,
+      "lookup_verified": false,
+      "lookup_time_ms": 0,
+      "hash_time_ms": 0,
+      "enrich_time_ms": 0
+    },
+    "025_mug": {
+      "name": "Mug",
+      "status": "registered",
+      "soulmark": "DRY_RUN...",
+      "registered_count": 0,
+      "lookup_verified": false,
+      "lookup_time_ms": 0,
+      "hash_time_ms": 0,
+      "enrich_time_ms": 0
+    },
+    "035_power_drill": {
+      "name": "Power Drill",
+      "status": "registered",
+      "soulmark": "DRY_RUN...",
+      "registered_count": 0,
+      "lookup_verified": false,
+      "lookup_time_ms": 0,
+      "hash_time_ms": 0,
+      "enrich_time_ms": 0
+    },
+    "036_wood_block": {
+      "name": "Wood Block Set",
+      "status": "registered",
+      "soulmark": "DRY_RUN...",
+      "registered_count": 0,
+      "lookup_verified": false,
+      "lookup_time_ms": 0,
+      "hash_time_ms": 0,
+      "enrich_time_ms": 0
+    },
+    "037_scissors": {
+      "name": "Scissors",
+      "status": "registered",
+      "soulmark": "DRY_RUN...",
+      "registered_count": 0,
+      "lookup_verified": false,
+      "lookup_time_ms": 0,
+      "hash_time_ms": 0,
+      "enrich_time_ms": 0
+    },
+    "040_large_marker": {
+      "name": "Large Marker",
+      "status": "registered",
+      "soulmark": "DRY_RUN...",
+      "registered_count": 0,
+      "lookup_verified": false,
+      "lookup_time_ms": 0,
+      "hash_time_ms": 0,
+      "enrich_time_ms": 0
+    },
+    "052_extra_large_clamp": {
+      "name": "Extra Large Clamp",
+      "status": "registered",
+      "soulmark": "DRY_RUN...",
+      "registered_count": 0,
+      "lookup_verified": false,
+      "lookup_time_ms": 0,
+      "hash_time_ms": 0,
+      "enrich_time_ms": 0
+    }
+  }
+}

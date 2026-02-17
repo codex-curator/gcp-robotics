@@ -1,0 +1,121 @@
+{
+  "@context": {
+    "gcp": "https://schema.metavolve.io/gcp/2.0/",
+    "ros2": "https://docs.ros.org/en/humble/",
+    "schema": "https://schema.org/"
+  },
+  "schema_version": "2.0-GCP-ROBOTICS",
+  "agent": "Batch_Registry_Builder",
+  "timestamps": {
+    "state_encountered": "2026-02-17T10:11:32.345786Z",
+    "schema_generated": "2026-02-17T10:11:32.345786Z",
+    "promoted_to_fast_path": null
+  },
+  "identifiers": {
+    "uuid": "f75c0d21-42c2-43b7-a4bf-f28f55e57a32",
+    "artifact_id": "geo-035_power_drill",
+    "codex_id": "GCP-GEO-035_POWER_DRILL"
+  },
+  "triple_hash": {
+    "content_hash_sha256": "4b6efcdcfeaf9953945e8716145ff9f030398f40fc23448ab175908685cb3551",
+    "ppp_256bit": "ae170e3885f80e382e110c307a03d0a1d0e8f0c3d1e1f1c77b47f1cff1eef3ce",
+    "soulmark_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "fast_path_dhash_64bit": "61e42b2b2b2bc001"
+  },
+  "layer_1_provenance": {
+    "manufacturer": "Standard Evaluation Template",
+    "model_no": "035_power_drill",
+    "serial": "geo-035_power_drill-f75c0d21",
+    "calibration_date": null,
+    "maintenance_schedule": null,
+    "workspace_zone": "evaluation_tabletop",
+    "lighting_condition": null,
+    "source_dataset": "geometric_primitives_v1",
+    "enrichment_timestamp": "2026-02-17T10:11:32.345786Z",
+    "enrichment_model_version": "batch-registry-builder-1.0"
+  },
+  "layer_2_semantic_topology": {
+    "object_classification": "Tool",
+    "physical_properties": {
+      "estimated_mass_kg": 0.895,
+      "center_of_mass_offset": null,
+      "friction_coefficient": 0.35,
+      "dimensions": {
+        "x": 0.184,
+        "y": 0.187,
+        "z": 0.052
+      }
+    },
+    "material_graph": {
+      "primary_material": "plastic_metal",
+      "component_count": 1
+    },
+    "kinematic_joints": null,
+    "perceptual_signature": {
+      "dhash_hex": "61e42b2b2b2bc001",
+      "phash_hex": "ae0e850e3e1e7af0",
+      "color_histogram_hash": "0xE3E3E3ECECECF0F0F0F0F0F0CAD5DF92B1CB92B1CBC8D4DFC8D4DF8FAECA8FAECAC7D3DEF0F0F0F0F0F0F0F0F0F0F0F0",
+      "keyframe_timestamp_ms": null,
+      "variance_tolerance_pct": 5.0,
+      "region_of_interest": null,
+      "optical_flow_stable": true
+    },
+    "related_skbs": []
+  },
+  "layer_3_affordance": {
+    "action_schema": {
+      "primitive_id": "PICK_VERTICAL",
+      "parameters": {
+        "target_pose_relative": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": -0.05,
+          "qx": 0.0,
+          "qy": 0.0,
+          "qz": 0.0,
+          "qw": 1.0
+        },
+        "force_profile": {
+          "max_grip_newtons": 35.8,
+          "lateral_torque_limit_nm": 4.5,
+          "compliance_stiffness": null
+        },
+        "speed_profile": "FINE"
+      },
+      "validation_signature": null,
+      "execution_narrative": [],
+      "failure_modes": [
+        "Object slipped during grasp",
+        "Orientation error > 15 deg ()"
+      ]
+    }
+  },
+  "layer_4_safety": {
+    "hazard_class": "NONE",
+    "ppe_required": [],
+    "regulatory_certifications": [],
+    "operating_constraints": {
+      "max_speed_mm_s": 250.0,
+      "max_force_n": 35.8,
+      "restricted_zones": []
+    },
+    "enterprise_license": null,
+    "export_restrictions": null
+  },
+  "recovery_metadata": null,
+  "amendments": [],
+  "telemetry": {
+    "target_controller": "franka_panda_eval_cell",
+    "transport_layer": "ROS2_Humble",
+    "end_effector": "franka_hand",
+    "slow_path_latency_ms": 0.0,
+    "fast_path_latency_ms": 0.0,
+    "pipeline_status": "FAST_PATH_ACTIVE"
+  },
+  "control_loop": {
+    "vision_hashed": true,
+    "vlm_inference_completed": false,
+    "digital_twin_simulated": false,
+    "ram_cache_updated": true
+  }
+}
