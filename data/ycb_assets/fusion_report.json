@@ -1,0 +1,57 @@
+{
+  "status": "READY_FOR_SIMULATION",
+  "generated_at": "2026-02-17T08:24:16.459964Z",
+  "elapsed_seconds": 1.53,
+  "sdk_version": "gcp-robotics 2.0.0",
+  "lab_kit_version": "codex-lab-kit 1.0.0",
+  "scene": {
+    "name": "Standard Evaluation Scene",
+    "table_m": "1.2 x 0.8",
+    "robot": "Franka Emika Panda",
+    "camera": "Intel RealSense D435"
+  },
+  "objects": [
+    {
+      "id": "003_cracker_box",
+      "name": "Cheez-It Cracker Box",
+      "uuid": "bbd67ee5-96f0-4793-bfc5-2e60c4985028",
+      "mass_kg": 0.411,
+      "hazard": "NONE",
+      "action": "PICK_VERTICAL",
+      "schema_valid": true
+    },
+    {
+      "id": "006_mustard_bottle",
+      "name": "French's Mustard Bottle",
+      "uuid": "4731c4b6-c70a-4791-a551-0320a4228839",
+      "mass_kg": 0.603,
+      "hazard": "CHEMICAL",
+      "action": "GRASP_PARALLEL_JAW",
+      "schema_valid": true
+    },
+    {
+      "id": "010_potted_meat_can",
+      "name": "Hormel Potted Meat Can",
+      "uuid": "4bf2813a-95cf-451f-983c-444c2f67a9e1",
+      "mass_kg": 0.37,
+      "hazard": "SHARP_EDGES",
+      "action": "PICK_VERTICAL",
+      "schema_valid": true
+    }
+  ],
+  "registry": {
+    "total_entries": 5,
+    "fast_path_verified": true
+  },
+  "validation_protocol": {
+    "total_phases": 4,
+    "total_trials": 388
+  },
+  "outputs": {
+    "scene_manifest": "data/ycb_assets/scene_manifest.json",
+    "registry": "data/ycb_assets/fusion_registry.json",
+    "skbs": "data/ycb_assets/skbs",
+    "protocol": "data/ycb_assets/experiment_protocol.json"
+  },
+  "soulmark_verification": "ALL PASSED (HMAC-SHA256, fleet-keyed)"
+}

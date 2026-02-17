@@ -1,0 +1,63 @@
+{
+  "batch_report": {
+    "template": "standard_evaluation",
+    "generated_at": "2026-02-17T09:10:46.276950+00:00",
+    "total_objects": 5,
+    "total_elapsed_s": 2.01,
+    "stages_completed": 6,
+    "completed": 5,
+    "success_rate": 100.0
+  },
+  "objects": {
+    "cube_red_50mm": {
+      "name": "Red Cube (50 mm)",
+      "status": "registered",
+      "soulmark": "44136fa355b3678a...",
+      "registered_count": 3,
+      "lookup_verified": true,
+      "lookup_time_ms": 0.0002580054569989443,
+      "hash_time_ms": 405.94,
+      "enrich_time_ms": 0.36
+    },
+    "sphere_blue_60mm": {
+      "name": "Blue Sphere (60 mm)",
+      "status": "registered",
+      "soulmark": "44136fa355b3678a...",
+      "registered_count": 3,
+      "lookup_verified": true,
+      "lookup_time_ms": 0.00019499566406011581,
+      "hash_time_ms": 281.16,
+      "enrich_time_ms": 0.12
+    },
+    "cylinder_green_40x80mm": {
+      "name": "Green Cylinder (40 x 80 mm)",
+      "status": "registered",
+      "soulmark": "44136fa355b3678a...",
+      "registered_count": 3,
+      "lookup_verified": true,
+      "lookup_time_ms": 0.00015499244909733534,
+      "hash_time_ms": 220.9,
+      "enrich_time_ms": 0.08
+    },
+    "pyramid_yellow_50mm": {
+      "name": "Yellow Pyramid (50 mm base)",
+      "status": "registered",
+      "soulmark": "44136fa355b3678a...",
+      "registered_count": 3,
+      "lookup_verified": true,
+      "lookup_time_ms": 0.00010798976290971041,
+      "hash_time_ms": 377.44,
+      "enrich_time_ms": 0.07
+    },
+    "l_bracket_white_80x60mm": {
+      "name": "White L-Bracket (80 x 60 mm)",
+      "status": "registered",
+      "soulmark": "44136fa355b3678a...",
+      "registered_count": 3,
+      "lookup_verified": true,
+      "lookup_time_ms": 0.0001870066625997424,
+      "hash_time_ms": 249.97,
+      "enrich_time_ms": 0.06
+    }
+  }
+}

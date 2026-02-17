@@ -1,0 +1,123 @@
+{
+  "@context": {
+    "gcp": "https://schema.metavolve.io/gcp/2.0/",
+    "ros2": "https://docs.ros.org/en/humble/",
+    "schema": "https://schema.org/"
+  },
+  "schema_version": "2.0-GCP-ROBOTICS",
+  "agent": "Fast_Path_Registry",
+  "timestamps": {
+    "state_encountered": "2026-02-17T08:24:16.027467",
+    "schema_generated": "2026-02-17T08:24:16.027469",
+    "promoted_to_fast_path": null
+  },
+  "identifiers": {
+    "uuid": "4bf2813a-95cf-451f-983c-444c2f67a9e1",
+    "artifact_id": "ycb-010_potted_meat_can",
+    "codex_id": "GCP-YCB-010_POTTED_MEAT_CAN"
+  },
+  "triple_hash": {
+    "content_hash_sha256": "eb5db2daf0bc8bd7813347874fdd1e42d7ac0f1efe6596abd0a56e50752c472e",
+    "ppp_256bit": "E1E52BF99A1A39AA9BAAB1A231A09482E4D1C651CE5D465DCE5DE645E447DE07",
+    "soulmark_sha256": "fb8ff83e12ef22a9f1e7a6ec4a2952f525681f2ed8ff7225461690f9b096a486",
+    "fast_path_dhash_64bit": "920B969696969668"
+  },
+  "layer_1_provenance": {
+    "manufacturer": "YCB Dataset (Yale-CMU-Berkeley)",
+    "model_no": "010_potted_meat_can",
+    "serial": "ycb-010_potted_meat_can-fusion-poc",
+    "calibration_date": null,
+    "maintenance_schedule": null,
+    "workspace_zone": "evaluation_tabletop",
+    "lighting_condition": null,
+    "source_dataset": "YCB Object and Model Set",
+    "enrichment_timestamp": null,
+    "enrichment_model_version": "gcp-robotics-2.0.0"
+  },
+  "layer_2_semantic_topology": {
+    "object_classification": "Rigid_Body_Graspable",
+    "physical_properties": {
+      "estimated_mass_kg": 0.37,
+      "center_of_mass_offset": null,
+      "friction_coefficient": 0.3,
+      "dimensions": {
+        "x": 0.058,
+        "y": 0.101,
+        "z": 0.083
+      }
+    },
+    "material_graph": {
+      "primary_material": "metal",
+      "component_count": 1
+    },
+    "kinematic_joints": null,
+    "perceptual_signature": {
+      "dhash_hex": "920B969696969668",
+      "phash_hex": "E12B9A3999B53594",
+      "color_histogram_hash": "D5D5D5D3D3D3D2D2D2D7D7D7F0F0F0ACACB3A5A5ADF0F0F0F0F0F0AEAEB6A7A7B0F0F0F0F0F0F0E7E7E8E6E6E7F0F0F0",
+      "keyframe_timestamp_ms": null,
+      "variance_tolerance_pct": 5.0,
+      "region_of_interest": null,
+      "optical_flow_stable": true
+    },
+    "related_skbs": []
+  },
+  "layer_3_affordance": {
+    "action_schema": {
+      "primitive_id": "PICK_VERTICAL",
+      "parameters": {
+        "target_pose_relative": {
+          "x": 0.2,
+          "y": 0.0,
+          "z": 0.05,
+          "qx": 0.0,
+          "qy": 0.0,
+          "qz": 0.0,
+          "qw": 1.0
+        },
+        "force_profile": {
+          "max_grip_newtons": 20.0,
+          "lateral_torque_limit_nm": 1.5,
+          "compliance_stiffness": null
+        },
+        "speed_profile": "FINE"
+      },
+      "validation_signature": null,
+      "execution_narrative": [],
+      "failure_modes": [
+        "Slip during lift",
+        "Orientation error > 15 deg"
+      ]
+    }
+  },
+  "layer_4_safety": {
+    "hazard_class": "SHARP_EDGES",
+    "ppe_required": [
+      "safety_glasses"
+    ],
+    "regulatory_certifications": [],
+    "operating_constraints": {
+      "max_speed_mm_s": 250.0,
+      "max_force_n": 20.0,
+      "restricted_zones": []
+    },
+    "enterprise_license": null,
+    "export_restrictions": null
+  },
+  "recovery_metadata": null,
+  "amendments": [],
+  "telemetry": {
+    "target_controller": "franka_panda_eval_cell",
+    "transport_layer": "ROS2_Humble",
+    "end_effector": "franka_hand",
+    "slow_path_latency_ms": 0.0,
+    "fast_path_latency_ms": 0.0,
+    "pipeline_status": "FAST_PATH_ACTIVE"
+  },
+  "control_loop": {
+    "vision_hashed": true,
+    "vlm_inference_completed": false,
+    "digital_twin_simulated": false,
+    "ram_cache_updated": true
+  }
+}

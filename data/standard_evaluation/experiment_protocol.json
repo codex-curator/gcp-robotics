@@ -1,0 +1,156 @@
+{
+  "protocol_version": "1.0",
+  "framework": "Golden Codex Protocol 2.0-GCP-ROBOTICS",
+  "lab_info": {
+    "lab_name": "Batch Registry Builder",
+    "lab_contact": "research@iaeternum.ai",
+    "robot_model": "Franka Emika Panda",
+    "gripper_model": "Franka Hand (parallel jaw)",
+    "camera_model": "Intel RealSense D435",
+    "workspace_zone": "evaluation_tabletop"
+  },
+  "summary": {
+    "total_phases": 4,
+    "total_trials": 730,
+    "estimated_duration_min": 405,
+    "requires_hardware": true
+  },
+  "phases": [
+    {
+      "phase_id": "A",
+      "name": "Hash Robustness",
+      "description": "Capture 180 images of 5 objects across 12 viewpoints and 3 lighting conditions. Compute composite hashes and measure intra-class Hamming distance distributions, inter-class separation, and ROC curves.",
+      "object_ids": [
+        "cube_red_50mm",
+        "sphere_blue_60mm",
+        "cylinder_green_40x80mm",
+        "pyramid_yellow_50mm",
+        "l_bracket_white_80x60mm"
+      ],
+      "trials_per_object": 36,
+      "requires_hardware": false,
+      "estimated_duration_min": 25,
+      "parameters": {
+        "viewpoints": 12,
+        "lighting_conditions": [
+          "ambient",
+          "overhead_bright",
+          "directional_side"
+        ],
+        "turntable_increment_deg": 30.0,
+        "capture_format": "PNG",
+        "resolution_min": "640x480",
+        "metrics": [
+          "intra_class_hamming_mean",
+          "intra_class_hamming_std",
+          "inter_class_hamming_mean",
+          "roc_auc_exact_threshold",
+          "roc_auc_fuzzy_threshold",
+          "false_positive_rate_at_threshold_5",
+          "recall_at_threshold_5"
+        ]
+      }
+    },
+    {
+      "phase_id": "B",
+      "name": "Hash-to-Grasp Correlation",
+      "description": "For each of 5 objects, execute the SKB-prescribed action 10 times. Record binary grasp success, actual force profile, and execution time. Correlate hash distance at lookup time with grasp success.",
+      "object_ids": [
+        "cube_red_50mm",
+        "sphere_blue_60mm",
+        "cylinder_green_40x80mm",
+        "pyramid_yellow_50mm",
+        "l_bracket_white_80x60mm"
+      ],
+      "trials_per_object": 10,
+      "requires_hardware": true,
+      "estimated_duration_min": 100,
+      "parameters": {
+        "grasps_per_object": 10,
+        "max_hamming_distance": 10,
+        "force_sensor_required": true,
+        "metrics": [
+          "grasp_success_rate_by_hamming_band",
+          "mean_force_deviation_N",
+          "execution_time_ms",
+          "post_action_hash_shift"
+        ]
+      }
+    },
+    {
+      "phase_id": "C",
+      "name": "Loop Closure Convergence",
+      "description": "Present 5 novel objects (not in initial registry). Run 50 consecutive attempts per object. Measure trials until first success, trials until reliable (>90%) success, and total LLM calls vs. hash lookups.",
+      "object_ids": [
+        "011_banana",
+        "019_pitcher_base",
+        "021_bleach_cleanser",
+        "024_bowl",
+        "025_mug"
+      ],
+      "trials_per_object": 50,
+      "requires_hardware": true,
+      "estimated_duration_min": 250,
+      "parameters": {
+        "llm_provider": "anthropic_claude",
+        "auto_promote": true,
+        "metrics": [
+          "trials_to_first_success",
+          "trials_to_90pct_success",
+          "total_llm_calls",
+          "total_hash_lookups",
+          "convergence_curve",
+          "promotion_count"
+        ]
+      }
+    },
+    {
+      "phase_id": "D",
+      "name": "Latency Profile",
+      "description": "Measure end-to-end timing: image capture, hash computation, registry lookup, action execution start. Compare against a baseline neural-network-only pipeline if available.",
+      "object_ids": [
+        "cube_red_50mm",
+        "sphere_blue_60mm",
+        "cylinder_green_40x80mm",
+        "pyramid_yellow_50mm",
+        "l_bracket_white_80x60mm"
+      ],
+      "trials_per_object": 50,
+      "requires_hardware": true,
+      "estimated_duration_min": 30,
+      "parameters": {
+        "timing_components": [
+          "image_capture_ms",
+          "hash_computation_ms",
+          "registry_lookup_ms",
+          "ros2_transport_ms",
+          "motion_planning_ms",
+          "total_perception_to_action_ms"
+        ],
+        "baseline_comparison": "clip_feature_matching",
+        "warmup_iterations": 10,
+        "measurement_iterations": 50
+      }
+    }
+  ],
+  "acceptance_criteria": {
+    "phase_a": {
+      "intra_class_hamming_mean_lt": 6,
+      "inter_class_hamming_mean_gt": 15,
+      "recall_at_threshold_5_gt": 0.9,
+      "false_positive_rate_lt": 0.01
+    },
+    "phase_b": {
+      "exact_match_grasp_success_gt": 0.85,
+      "fuzzy_match_grasp_success_gt": 0.7
+    },
+    "phase_c": {
+      "trials_to_90pct_median_lt": 10,
+      "final_success_rate_gt": 0.9
+    },
+    "phase_d": {
+      "hash_lookup_p99_ms_lt": 1.0,
+      "total_fast_path_p99_ms_lt": 20.0
+    }
+  }
+}

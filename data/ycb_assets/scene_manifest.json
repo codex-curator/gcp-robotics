@@ -1,0 +1,90 @@
+{
+  "scene": {
+    "name": "Standard Evaluation Scene",
+    "table_width_m": 1.2,
+    "table_depth_m": 0.8,
+    "table_height_m": 0.75,
+    "robot": {
+      "model": "Franka Emika Panda",
+      "dof": 7,
+      "base_position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reach_m": 0.855,
+      "end_effector": "Franka Hand (parallel jaw)",
+      "max_grip_force_n": 70.0,
+      "payload_kg": 3.0
+    },
+    "camera": {
+      "model": "Intel RealSense D435",
+      "resolution": "1280x720",
+      "fps": 30,
+      "mount": "wrist-mounted"
+    }
+  },
+  "generated_at": "2026-02-17T08:24:16.027606Z",
+  "objects": [
+    {
+      "object_id": "003_cracker_box",
+      "name": "Cheez-It Cracker Box",
+      "skb_uuid": "bbd67ee5-96f0-4793-bfc5-2e60c4985028",
+      "codex_id": "GCP-YCB-003_CRACKER_BOX",
+      "position_world_m": {
+        "x": 0.4,
+        "y": 0.4,
+        "z": 0.75
+      },
+      "dhash_64bit": "5796969696969606",
+      "soulmark_sha256": "cb7c01d945de13db363d59ef61636d8438f630be39f4dfc2295d629880fed3aa",
+      "hazard_class": "NONE",
+      "action_primitive": "PICK_VERTICAL",
+      "images": [
+        "data/ycb_assets/images/003_cracker_box/test_0000.png",
+        "data/ycb_assets/images/003_cracker_box/test_0001.png",
+        "data/ycb_assets/images/003_cracker_box/test_0002.png"
+      ]
+    },
+    {
+      "object_id": "006_mustard_bottle",
+      "name": "French's Mustard Bottle",
+      "skb_uuid": "4731c4b6-c70a-4791-a551-0320a4228839",
+      "codex_id": "GCP-YCB-006_MUSTARD_BOTTLE",
+      "position_world_m": {
+        "x": 0.6,
+        "y": 0.4,
+        "z": 0.75
+      },
+      "dhash_64bit": "C996969696969600",
+      "soulmark_sha256": "43e863f95da7f408bbf63715a30d485137699f73b5b45a580e70dc742c7eeb1d",
+      "hazard_class": "CHEMICAL",
+      "action_primitive": "GRASP_PARALLEL_JAW",
+      "images": [
+        "data/ycb_assets/images/006_mustard_bottle/test_0000.png",
+        "data/ycb_assets/images/006_mustard_bottle/test_0001.png",
+        "data/ycb_assets/images/006_mustard_bottle/test_0002.png"
+      ]
+    },
+    {
+      "object_id": "010_potted_meat_can",
+      "name": "Hormel Potted Meat Can",
+      "skb_uuid": "4bf2813a-95cf-451f-983c-444c2f67a9e1",
+      "codex_id": "GCP-YCB-010_POTTED_MEAT_CAN",
+      "position_world_m": {
+        "x": 0.8,
+        "y": 0.4,
+        "z": 0.75
+      },
+      "dhash_64bit": "920B969696969668",
+      "soulmark_sha256": "fb8ff83e12ef22a9f1e7a6ec4a2952f525681f2ed8ff7225461690f9b096a486",
+      "hazard_class": "SHARP_EDGES",
+      "action_primitive": "PICK_VERTICAL",
+      "images": [
+        "data/ycb_assets/images/010_potted_meat_can/test_0000.png",
+        "data/ycb_assets/images/010_potted_meat_can/test_0001.png",
+        "data/ycb_assets/images/010_potted_meat_can/test_0002.png"
+      ]
+    }
+  ]
+}

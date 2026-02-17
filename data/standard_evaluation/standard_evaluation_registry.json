@@ -1,0 +1,1666 @@
+{
+  "version": 1,
+  "entries": {
+    "0x4E69969696966906": {
+      "skb_data": {
+        "@context": {
+          "gcp": "https://schema.metavolve.io/gcp/2.0/",
+          "ros2": "https://docs.ros.org/en/humble/",
+          "schema": "https://schema.org/"
+        },
+        "schema_version": "2.0-GCP-ROBOTICS",
+        "agent": "Batch_Registry_Builder",
+        "timestamps": {
+          "state_encountered": "2026-02-17T09:10:45.832034Z",
+          "schema_generated": "2026-02-17T09:10:45.832034Z",
+          "promoted_to_fast_path": null
+        },
+        "identifiers": {
+          "uuid": "8ae44b60-26b0-4ebd-9fcc-073a4d7612d3",
+          "artifact_id": "geo-cube_red_50mm",
+          "codex_id": "GCP-GEO-CUBE_RED_50MM"
+        },
+        "triple_hash": {
+          "content_hash_sha256": "c26ab131a558491a10cf937f031c41dbf8537294ac8f9c8c94bf272ac6a0bfb0",
+          "ppp_256bit": "a58737f39e7937f325e337f361a7cb38da78c10cc90cc90c6186d90cda0cd90c",
+          "soulmark_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "fast_path_dhash_64bit": "4e69969696966906"
+        },
+        "layer_1_provenance": {
+          "manufacturer": "Standard Evaluation Template",
+          "model_no": "cube_red_50mm",
+          "serial": "geo-cube_red_50mm-8ae44b60",
+          "calibration_date": null,
+          "maintenance_schedule": null,
+          "workspace_zone": "evaluation_tabletop",
+          "lighting_condition": null,
+          "source_dataset": "geometric_primitives_v1",
+          "enrichment_timestamp": "2026-02-17T09:10:45.832034Z",
+          "enrichment_model_version": "batch-registry-builder-1.0"
+        },
+        "layer_2_semantic_topology": {
+          "object_classification": "Rigid_Body_Graspable",
+          "physical_properties": {
+            "estimated_mass_kg": 0.125,
+            "center_of_mass_offset": null,
+            "friction_coefficient": 0.4,
+            "dimensions": {
+              "x": 0.05,
+              "y": 0.05,
+              "z": 0.05
+            }
+          },
+          "material_graph": {
+            "primary_material": "plastic",
+            "component_count": 1
+          },
+          "kinematic_joints": null,
+          "perceptual_signature": {
+            "dhash_hex": "4e69969696966906",
+            "phash_hex": "a5379e37252661ca",
+            "color_histogram_hash": "0xE3E3E3E1E1E1E6E6E6F0F0F0F0F0F0CA7777C66868F0F0F0F0F0F0C66868C15757F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0",
+            "keyframe_timestamp_ms": null,
+            "variance_tolerance_pct": 5.0,
+            "region_of_interest": null,
+            "optical_flow_stable": true
+          },
+          "related_skbs": []
+        },
+        "layer_3_affordance": {
+          "action_schema": {
+            "primitive_id": "PICK_VERTICAL",
+            "parameters": {
+              "target_pose_relative": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.05,
+                "qx": 0.0,
+                "qy": 0.0,
+                "qz": 0.0,
+                "qw": 1.0
+              },
+              "force_profile": {
+                "max_grip_newtons": 10.0,
+                "lateral_torque_limit_nm": 0.6,
+                "compliance_stiffness": null
+              },
+              "speed_profile": "FINE"
+            },
+            "validation_signature": null,
+            "execution_narrative": [],
+            "failure_modes": [
+              "Object slipped during grasp",
+              "Orientation error > 15 deg (Stable, easy to grasp. Default pick-and-place baseline.)"
+            ]
+          }
+        },
+        "layer_4_safety": {
+          "hazard_class": "NONE",
+          "ppe_required": [],
+          "regulatory_certifications": [],
+          "operating_constraints": {
+            "max_speed_mm_s": 250.0,
+            "max_force_n": 10.0,
+            "restricted_zones": []
+          },
+          "enterprise_license": null,
+          "export_restrictions": null
+        },
+        "recovery_metadata": null,
+        "amendments": [],
+        "telemetry": {
+          "target_controller": "franka_panda_eval_cell",
+          "transport_layer": "ROS2_Humble",
+          "end_effector": "franka_hand",
+          "slow_path_latency_ms": 0.0,
+          "fast_path_latency_ms": 0.0,
+          "pipeline_status": "FAST_PATH_ACTIVE"
+        },
+        "control_loop": {
+          "vision_hashed": true,
+          "vlm_inference_completed": false,
+          "digital_twin_simulated": false,
+          "ram_cache_updated": true
+        }
+      },
+      "phash_hex": null,
+      "ppp_256": null,
+      "promoted": false
+    },
+    "0x4E79969696966916": {
+      "skb_data": {
+        "@context": {
+          "gcp": "https://schema.metavolve.io/gcp/2.0/",
+          "ros2": "https://docs.ros.org/en/humble/",
+          "schema": "https://schema.org/"
+        },
+        "schema_version": "2.0-GCP-ROBOTICS",
+        "agent": "Batch_Registry_Builder",
+        "timestamps": {
+          "state_encountered": "2026-02-17T09:10:45.832034Z",
+          "schema_generated": "2026-02-17T09:10:45.832034Z",
+          "promoted_to_fast_path": null
+        },
+        "identifiers": {
+          "uuid": "8ae44b60-26b0-4ebd-9fcc-073a4d7612d3",
+          "artifact_id": "geo-cube_red_50mm",
+          "codex_id": "GCP-GEO-CUBE_RED_50MM"
+        },
+        "triple_hash": {
+          "content_hash_sha256": "c26ab131a558491a10cf937f031c41dbf8537294ac8f9c8c94bf272ac6a0bfb0",
+          "ppp_256bit": "a58737f39e7937f325e337f361a7cb38da78c10cc90cc90c6186d90cda0cd90c",
+          "soulmark_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "fast_path_dhash_64bit": "4e69969696966906"
+        },
+        "layer_1_provenance": {
+          "manufacturer": "Standard Evaluation Template",
+          "model_no": "cube_red_50mm",
+          "serial": "geo-cube_red_50mm-8ae44b60",
+          "calibration_date": null,
+          "maintenance_schedule": null,
+          "workspace_zone": "evaluation_tabletop",
+          "lighting_condition": null,
+          "source_dataset": "geometric_primitives_v1",
+          "enrichment_timestamp": "2026-02-17T09:10:45.832034Z",
+          "enrichment_model_version": "batch-registry-builder-1.0"
+        },
+        "layer_2_semantic_topology": {
+          "object_classification": "Rigid_Body_Graspable",
+          "physical_properties": {
+            "estimated_mass_kg": 0.125,
+            "center_of_mass_offset": null,
+            "friction_coefficient": 0.4,
+            "dimensions": {
+              "x": 0.05,
+              "y": 0.05,
+              "z": 0.05
+            }
+          },
+          "material_graph": {
+            "primary_material": "plastic",
+            "component_count": 1
+          },
+          "kinematic_joints": null,
+          "perceptual_signature": {
+            "dhash_hex": "4e69969696966906",
+            "phash_hex": "a5379e37252661ca",
+            "color_histogram_hash": "0xE3E3E3E1E1E1E6E6E6F0F0F0F0F0F0CA7777C66868F0F0F0F0F0F0C66868C15757F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0",
+            "keyframe_timestamp_ms": null,
+            "variance_tolerance_pct": 5.0,
+            "region_of_interest": null,
+            "optical_flow_stable": true
+          },
+          "related_skbs": []
+        },
+        "layer_3_affordance": {
+          "action_schema": {
+            "primitive_id": "PICK_VERTICAL",
+            "parameters": {
+              "target_pose_relative": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.05,
+                "qx": 0.0,
+                "qy": 0.0,
+                "qz": 0.0,
+                "qw": 1.0
+              },
+              "force_profile": {
+                "max_grip_newtons": 10.0,
+                "lateral_torque_limit_nm": 0.6,
+                "compliance_stiffness": null
+              },
+              "speed_profile": "FINE"
+            },
+            "validation_signature": null,
+            "execution_narrative": [],
+            "failure_modes": [
+              "Object slipped during grasp",
+              "Orientation error > 15 deg (Stable, easy to grasp. Default pick-and-place baseline.)"
+            ]
+          }
+        },
+        "layer_4_safety": {
+          "hazard_class": "NONE",
+          "ppe_required": [],
+          "regulatory_certifications": [],
+          "operating_constraints": {
+            "max_speed_mm_s": 250.0,
+            "max_force_n": 10.0,
+            "restricted_zones": []
+          },
+          "enterprise_license": null,
+          "export_restrictions": null
+        },
+        "recovery_metadata": null,
+        "amendments": [],
+        "telemetry": {
+          "target_controller": "franka_panda_eval_cell",
+          "transport_layer": "ROS2_Humble",
+          "end_effector": "franka_hand",
+          "slow_path_latency_ms": 0.0,
+          "fast_path_latency_ms": 0.0,
+          "pipeline_status": "FAST_PATH_ACTIVE"
+        },
+        "control_loop": {
+          "vision_hashed": true,
+          "vlm_inference_completed": false,
+          "digital_twin_simulated": false,
+          "ram_cache_updated": true
+        }
+      },
+      "phash_hex": null,
+      "ppp_256": null,
+      "promoted": false
+    },
+    "0x462A4C96964C2804": {
+      "skb_data": {
+        "@context": {
+          "gcp": "https://schema.metavolve.io/gcp/2.0/",
+          "ros2": "https://docs.ros.org/en/humble/",
+          "schema": "https://schema.org/"
+        },
+        "schema_version": "2.0-GCP-ROBOTICS",
+        "agent": "Batch_Registry_Builder",
+        "timestamps": {
+          "state_encountered": "2026-02-17T09:10:45.832462Z",
+          "schema_generated": "2026-02-17T09:10:45.832462Z",
+          "promoted_to_fast_path": null
+        },
+        "identifiers": {
+          "uuid": "d6894359-cae2-49c2-b75c-865774f2ad69",
+          "artifact_id": "geo-sphere_blue_60mm",
+          "codex_id": "GCP-GEO-SPHERE_BLUE_60MM"
+        },
+        "triple_hash": {
+          "content_hash_sha256": "488700e5721c6f02211c2cd3e25f11f8d3c5e68638584c855a781019a9a85837",
+          "ppp_256bit": "a5872fef9e7d25e72de727cf661ac860d861d0c2d982d258f218d832da61d81a",
+          "soulmark_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "fast_path_dhash_64bit": "462a4c96964c2804"
+        },
+        "layer_1_provenance": {
+          "manufacturer": "Standard Evaluation Template",
+          "model_no": "sphere_blue_60mm",
+          "serial": "geo-sphere_blue_60mm-d6894359",
+          "calibration_date": null,
+          "maintenance_schedule": null,
+          "workspace_zone": "evaluation_tabletop",
+          "lighting_condition": null,
+          "source_dataset": "geometric_primitives_v1",
+          "enrichment_timestamp": "2026-02-17T09:10:45.832462Z",
+          "enrichment_model_version": "batch-registry-builder-1.0"
+        },
+        "layer_2_semantic_topology": {
+          "object_classification": "Rigid_Body_Graspable",
+          "physical_properties": {
+            "estimated_mass_kg": 0.113,
+            "center_of_mass_offset": null,
+            "friction_coefficient": 0.4,
+            "dimensions": {
+              "x": 0.06,
+              "y": 0.06,
+              "z": 0.06
+            }
+          },
+          "material_graph": {
+            "primary_material": "plastic",
+            "component_count": 1
+          },
+          "kinematic_joints": null,
+          "perceptual_signature": {
+            "dhash_hex": "462a4c96964c2804",
+            "phash_hex": "a52f9e252d2766c8",
+            "color_histogram_hash": "0xE3E3E3E3E3E3E3E3E3F0F0F0F0F0F0768BCB7087CAF0F0F0F0F0F07087CA6B82C8F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0",
+            "keyframe_timestamp_ms": null,
+            "variance_tolerance_pct": 5.0,
+            "region_of_interest": null,
+            "optical_flow_stable": true
+          },
+          "related_skbs": []
+        },
+        "layer_3_affordance": {
+          "action_schema": {
+            "primitive_id": "GRASP_PARALLEL_JAW",
+            "parameters": {
+              "target_pose_relative": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.05,
+                "qx": 0.0,
+                "qy": 0.0,
+                "qz": 0.0,
+                "qw": 1.0
+              },
+              "force_profile": {
+                "max_grip_newtons": 10.0,
+                "lateral_torque_limit_nm": 0.6,
+                "compliance_stiffness": null
+              },
+              "speed_profile": "FINE"
+            },
+            "validation_signature": null,
+            "execution_narrative": [],
+            "failure_modes": [
+              "Object slipped during grasp",
+              "Orientation error > 15 deg (Rolling risk. Requires adaptive grip.)"
+            ]
+          }
+        },
+        "layer_4_safety": {
+          "hazard_class": "NONE",
+          "ppe_required": [],
+          "regulatory_certifications": [],
+          "operating_constraints": {
+            "max_speed_mm_s": 250.0,
+            "max_force_n": 10.0,
+            "restricted_zones": []
+          },
+          "enterprise_license": null,
+          "export_restrictions": null
+        },
+        "recovery_metadata": null,
+        "amendments": [],
+        "telemetry": {
+          "target_controller": "franka_panda_eval_cell",
+          "transport_layer": "ROS2_Humble",
+          "end_effector": "franka_hand",
+          "slow_path_latency_ms": 0.0,
+          "fast_path_latency_ms": 0.0,
+          "pipeline_status": "FAST_PATH_ACTIVE"
+        },
+        "control_loop": {
+          "vision_hashed": true,
+          "vlm_inference_completed": false,
+          "digital_twin_simulated": false,
+          "ram_cache_updated": true
+        }
+      },
+      "phash_hex": "0xA52F9E252D2766C8",
+      "ppp_256": "0xA5872FEF9E7D25E72DE727CF661AC860D861D0C2D982D258F218D832DA61D81A",
+      "promoted": false
+    },
+    "0x462A4C96964C2814": {
+      "skb_data": {
+        "@context": {
+          "gcp": "https://schema.metavolve.io/gcp/2.0/",
+          "ros2": "https://docs.ros.org/en/humble/",
+          "schema": "https://schema.org/"
+        },
+        "schema_version": "2.0-GCP-ROBOTICS",
+        "agent": "Batch_Registry_Builder",
+        "timestamps": {
+          "state_encountered": "2026-02-17T09:10:45.832462Z",
+          "schema_generated": "2026-02-17T09:10:45.832462Z",
+          "promoted_to_fast_path": null
+        },
+        "identifiers": {
+          "uuid": "d6894359-cae2-49c2-b75c-865774f2ad69",
+          "artifact_id": "geo-sphere_blue_60mm",
+          "codex_id": "GCP-GEO-SPHERE_BLUE_60MM"
+        },
+        "triple_hash": {
+          "content_hash_sha256": "488700e5721c6f02211c2cd3e25f11f8d3c5e68638584c855a781019a9a85837",
+          "ppp_256bit": "a5872fef9e7d25e72de727cf661ac860d861d0c2d982d258f218d832da61d81a",
+          "soulmark_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "fast_path_dhash_64bit": "462a4c96964c2804"
+        },
+        "layer_1_provenance": {
+          "manufacturer": "Standard Evaluation Template",
+          "model_no": "sphere_blue_60mm",
+          "serial": "geo-sphere_blue_60mm-d6894359",
+          "calibration_date": null,
+          "maintenance_schedule": null,
+          "workspace_zone": "evaluation_tabletop",
+          "lighting_condition": null,
+          "source_dataset": "geometric_primitives_v1",
+          "enrichment_timestamp": "2026-02-17T09:10:45.832462Z",
+          "enrichment_model_version": "batch-registry-builder-1.0"
+        },
+        "layer_2_semantic_topology": {
+          "object_classification": "Rigid_Body_Graspable",
+          "physical_properties": {
+            "estimated_mass_kg": 0.113,
+            "center_of_mass_offset": null,
+            "friction_coefficient": 0.4,
+            "dimensions": {
+              "x": 0.06,
+              "y": 0.06,
+              "z": 0.06
+            }
+          },
+          "material_graph": {
+            "primary_material": "plastic",
+            "component_count": 1
+          },
+          "kinematic_joints": null,
+          "perceptual_signature": {
+            "dhash_hex": "462a4c96964c2804",
+            "phash_hex": "a52f9e252d2766c8",
+            "color_histogram_hash": "0xE3E3E3E3E3E3E3E3E3F0F0F0F0F0F0768BCB7087CAF0F0F0F0F0F07087CA6B82C8F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0",
+            "keyframe_timestamp_ms": null,
+            "variance_tolerance_pct": 5.0,
+            "region_of_interest": null,
+            "optical_flow_stable": true
+          },
+          "related_skbs": []
+        },
+        "layer_3_affordance": {
+          "action_schema": {
+            "primitive_id": "GRASP_PARALLEL_JAW",
+            "parameters": {
+              "target_pose_relative": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.05,
+                "qx": 0.0,
+                "qy": 0.0,
+                "qz": 0.0,
+                "qw": 1.0
+              },
+              "force_profile": {
+                "max_grip_newtons": 10.0,
+                "lateral_torque_limit_nm": 0.6,
+                "compliance_stiffness": null
+              },
+              "speed_profile": "FINE"
+            },
+            "validation_signature": null,
+            "execution_narrative": [],
+            "failure_modes": [
+              "Object slipped during grasp",
+              "Orientation error > 15 deg (Rolling risk. Requires adaptive grip.)"
+            ]
+          }
+        },
+        "layer_4_safety": {
+          "hazard_class": "NONE",
+          "ppe_required": [],
+          "regulatory_certifications": [],
+          "operating_constraints": {
+            "max_speed_mm_s": 250.0,
+            "max_force_n": 10.0,
+            "restricted_zones": []
+          },
+          "enterprise_license": null,
+          "export_restrictions": null
+        },
+        "recovery_metadata": null,
+        "amendments": [],
+        "telemetry": {
+          "target_controller": "franka_panda_eval_cell",
+          "transport_layer": "ROS2_Humble",
+          "end_effector": "franka_hand",
+          "slow_path_latency_ms": 0.0,
+          "fast_path_latency_ms": 0.0,
+          "pipeline_status": "FAST_PATH_ACTIVE"
+        },
+        "control_loop": {
+          "vision_hashed": true,
+          "vlm_inference_completed": false,
+          "digital_twin_simulated": false,
+          "ram_cache_updated": true
+        }
+      },
+      "phash_hex": null,
+      "ppp_256": null,
+      "promoted": false
+    },
+    "0x294C8E868E8E0620": {
+      "skb_data": {
+        "@context": {
+          "gcp": "https://schema.metavolve.io/gcp/2.0/",
+          "ros2": "https://docs.ros.org/en/humble/",
+          "schema": "https://schema.org/"
+        },
+        "schema_version": "2.0-GCP-ROBOTICS",
+        "agent": "Batch_Registry_Builder",
+        "timestamps": {
+          "state_encountered": "2026-02-17T09:10:45.832624Z",
+          "schema_generated": "2026-02-17T09:10:45.832624Z",
+          "promoted_to_fast_path": null
+        },
+        "identifiers": {
+          "uuid": "dcd251e6-70f8-4dd6-b09a-a7d237b1aef1",
+          "artifact_id": "geo-cylinder_green_40x80mm",
+          "codex_id": "GCP-GEO-CYLINDER_GREEN_40X80MM"
+        },
+        "triple_hash": {
+          "content_hash_sha256": "34cfc1d5240c40c0ff105b356e83007b2fc94b7e1d7b2acac5a287ea0f569b90",
+          "ppp_256bit": "e5965e799a6975db7df37ccb6596de69c669c6618860a98689868986a186831c",
+          "soulmark_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "fast_path_dhash_64bit": "294c8e868e8e0620"
+        },
+        "layer_1_provenance": {
+          "manufacturer": "Standard Evaluation Template",
+          "model_no": "cylinder_green_40x80mm",
+          "serial": "geo-cylinder_green_40x80mm-dcd251e6",
+          "calibration_date": null,
+          "maintenance_schedule": null,
+          "workspace_zone": "evaluation_tabletop",
+          "lighting_condition": null,
+          "source_dataset": "geometric_primitives_v1",
+          "enrichment_timestamp": "2026-02-17T09:10:45.832624Z",
+          "enrichment_model_version": "batch-registry-builder-1.0"
+        },
+        "layer_2_semantic_topology": {
+          "object_classification": "Rigid_Body_Graspable",
+          "physical_properties": {
+            "estimated_mass_kg": 0.1,
+            "center_of_mass_offset": null,
+            "friction_coefficient": 0.4,
+            "dimensions": {
+              "x": 0.04,
+              "y": 0.04,
+              "z": 0.08
+            }
+          },
+          "material_graph": {
+            "primary_material": "plastic",
+            "component_count": 1
+          },
+          "kinematic_joints": null,
+          "perceptual_signature": {
+            "dhash_hex": "294c8e868e8e0620",
+            "phash_hex": "e55e9a747878648a",
+            "color_histogram_hash": "0xE6E6E6E4E4E4E4E4E4E2E2E2F0F0F070C07C6ABE76F0F0F0F0F0F061B96D5AB767F0F0F0F0F0F0ECECECECECECF0F0F0",
+            "keyframe_timestamp_ms": null,
+            "variance_tolerance_pct": 5.0,
+            "region_of_interest": null,
+            "optical_flow_stable": true
+          },
+          "related_skbs": []
+        },
+        "layer_3_affordance": {
+          "action_schema": {
+            "primitive_id": "PICK_VERTICAL",
+            "parameters": {
+              "target_pose_relative": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.05,
+                "qx": 0.0,
+                "qy": 0.0,
+                "qz": 0.0,
+                "qw": 1.0
+              },
+              "force_profile": {
+                "max_grip_newtons": 10.0,
+                "lateral_torque_limit_nm": 0.5,
+                "compliance_stiffness": null
+              },
+              "speed_profile": "FINE"
+            },
+            "validation_signature": null,
+            "execution_narrative": [],
+            "failure_modes": [
+              "Object slipped during grasp",
+              "Orientation error > 15 deg (Orientation matters for cylinder grasp.)"
+            ]
+          }
+        },
+        "layer_4_safety": {
+          "hazard_class": "NONE",
+          "ppe_required": [],
+          "regulatory_certifications": [],
+          "operating_constraints": {
+            "max_speed_mm_s": 250.0,
+            "max_force_n": 10.0,
+            "restricted_zones": []
+          },
+          "enterprise_license": null,
+          "export_restrictions": null
+        },
+        "recovery_metadata": null,
+        "amendments": [],
+        "telemetry": {
+          "target_controller": "franka_panda_eval_cell",
+          "transport_layer": "ROS2_Humble",
+          "end_effector": "franka_hand",
+          "slow_path_latency_ms": 0.0,
+          "fast_path_latency_ms": 0.0,
+          "pipeline_status": "FAST_PATH_ACTIVE"
+        },
+        "control_loop": {
+          "vision_hashed": true,
+          "vlm_inference_completed": false,
+          "digital_twin_simulated": false,
+          "ram_cache_updated": true
+        }
+      },
+      "phash_hex": "0xE55E9A747878648A",
+      "ppp_256": "0xE5965E799A6975DB7DF37CCB6596DE69C669C6618860A98689868986A186831C",
+      "promoted": false
+    },
+    "0x294C8E868E8E0E20": {
+      "skb_data": {
+        "@context": {
+          "gcp": "https://schema.metavolve.io/gcp/2.0/",
+          "ros2": "https://docs.ros.org/en/humble/",
+          "schema": "https://schema.org/"
+        },
+        "schema_version": "2.0-GCP-ROBOTICS",
+        "agent": "Batch_Registry_Builder",
+        "timestamps": {
+          "state_encountered": "2026-02-17T09:10:45.832624Z",
+          "schema_generated": "2026-02-17T09:10:45.832624Z",
+          "promoted_to_fast_path": null
+        },
+        "identifiers": {
+          "uuid": "dcd251e6-70f8-4dd6-b09a-a7d237b1aef1",
+          "artifact_id": "geo-cylinder_green_40x80mm",
+          "codex_id": "GCP-GEO-CYLINDER_GREEN_40X80MM"
+        },
+        "triple_hash": {
+          "content_hash_sha256": "34cfc1d5240c40c0ff105b356e83007b2fc94b7e1d7b2acac5a287ea0f569b90",
+          "ppp_256bit": "e5965e799a6975db7df37ccb6596de69c669c6618860a98689868986a186831c",
+          "soulmark_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "fast_path_dhash_64bit": "294c8e868e8e0620"
+        },
+        "layer_1_provenance": {
+          "manufacturer": "Standard Evaluation Template",
+          "model_no": "cylinder_green_40x80mm",
+          "serial": "geo-cylinder_green_40x80mm-dcd251e6",
+          "calibration_date": null,
+          "maintenance_schedule": null,
+          "workspace_zone": "evaluation_tabletop",
+          "lighting_condition": null,
+          "source_dataset": "geometric_primitives_v1",
+          "enrichment_timestamp": "2026-02-17T09:10:45.832624Z",
+          "enrichment_model_version": "batch-registry-builder-1.0"
+        },
+        "layer_2_semantic_topology": {
+          "object_classification": "Rigid_Body_Graspable",
+          "physical_properties": {
+            "estimated_mass_kg": 0.1,
+            "center_of_mass_offset": null,
+            "friction_coefficient": 0.4,
+            "dimensions": {
+              "x": 0.04,
+              "y": 0.04,
+              "z": 0.08
+            }
+          },
+          "material_graph": {
+            "primary_material": "plastic",
+            "component_count": 1
+          },
+          "kinematic_joints": null,
+          "perceptual_signature": {
+            "dhash_hex": "294c8e868e8e0620",
+            "phash_hex": "e55e9a747878648a",
+            "color_histogram_hash": "0xE6E6E6E4E4E4E4E4E4E2E2E2F0F0F070C07C6ABE76F0F0F0F0F0F061B96D5AB767F0F0F0F0F0F0ECECECECECECF0F0F0",
+            "keyframe_timestamp_ms": null,
+            "variance_tolerance_pct": 5.0,
+            "region_of_interest": null,
+            "optical_flow_stable": true
+          },
+          "related_skbs": []
+        },
+        "layer_3_affordance": {
+          "action_schema": {
+            "primitive_id": "PICK_VERTICAL",
+            "parameters": {
+              "target_pose_relative": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.05,
+                "qx": 0.0,
+                "qy": 0.0,
+                "qz": 0.0,
+                "qw": 1.0
+              },
+              "force_profile": {
+                "max_grip_newtons": 10.0,
+                "lateral_torque_limit_nm": 0.5,
+                "compliance_stiffness": null
+              },
+              "speed_profile": "FINE"
+            },
+            "validation_signature": null,
+            "execution_narrative": [],
+            "failure_modes": [
+              "Object slipped during grasp",
+              "Orientation error > 15 deg (Orientation matters for cylinder grasp.)"
+            ]
+          }
+        },
+        "layer_4_safety": {
+          "hazard_class": "NONE",
+          "ppe_required": [],
+          "regulatory_certifications": [],
+          "operating_constraints": {
+            "max_speed_mm_s": 250.0,
+            "max_force_n": 10.0,
+            "restricted_zones": []
+          },
+          "enterprise_license": null,
+          "export_restrictions": null
+        },
+        "recovery_metadata": null,
+        "amendments": [],
+        "telemetry": {
+          "target_controller": "franka_panda_eval_cell",
+          "transport_layer": "ROS2_Humble",
+          "end_effector": "franka_hand",
+          "slow_path_latency_ms": 0.0,
+          "fast_path_latency_ms": 0.0,
+          "pipeline_status": "FAST_PATH_ACTIVE"
+        },
+        "control_loop": {
+          "vision_hashed": true,
+          "vlm_inference_completed": false,
+          "digital_twin_simulated": false,
+          "ram_cache_updated": true
+        }
+      },
+      "phash_hex": null,
+      "ppp_256": null,
+      "promoted": false
+    },
+    "0x294C8E8686860E30": {
+      "skb_data": {
+        "@context": {
+          "gcp": "https://schema.metavolve.io/gcp/2.0/",
+          "ros2": "https://docs.ros.org/en/humble/",
+          "schema": "https://schema.org/"
+        },
+        "schema_version": "2.0-GCP-ROBOTICS",
+        "agent": "Batch_Registry_Builder",
+        "timestamps": {
+          "state_encountered": "2026-02-17T09:10:45.832624Z",
+          "schema_generated": "2026-02-17T09:10:45.832624Z",
+          "promoted_to_fast_path": null
+        },
+        "identifiers": {
+          "uuid": "dcd251e6-70f8-4dd6-b09a-a7d237b1aef1",
+          "artifact_id": "geo-cylinder_green_40x80mm",
+          "codex_id": "GCP-GEO-CYLINDER_GREEN_40X80MM"
+        },
+        "triple_hash": {
+          "content_hash_sha256": "34cfc1d5240c40c0ff105b356e83007b2fc94b7e1d7b2acac5a287ea0f569b90",
+          "ppp_256bit": "e5965e799a6975db7df37ccb6596de69c669c6618860a98689868986a186831c",
+          "soulmark_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "fast_path_dhash_64bit": "294c8e868e8e0620"
+        },
+        "layer_1_provenance": {
+          "manufacturer": "Standard Evaluation Template",
+          "model_no": "cylinder_green_40x80mm",
+          "serial": "geo-cylinder_green_40x80mm-dcd251e6",
+          "calibration_date": null,
+          "maintenance_schedule": null,
+          "workspace_zone": "evaluation_tabletop",
+          "lighting_condition": null,
+          "source_dataset": "geometric_primitives_v1",
+          "enrichment_timestamp": "2026-02-17T09:10:45.832624Z",
+          "enrichment_model_version": "batch-registry-builder-1.0"
+        },
+        "layer_2_semantic_topology": {
+          "object_classification": "Rigid_Body_Graspable",
+          "physical_properties": {
+            "estimated_mass_kg": 0.1,
+            "center_of_mass_offset": null,
+            "friction_coefficient": 0.4,
+            "dimensions": {
+              "x": 0.04,
+              "y": 0.04,
+              "z": 0.08
+            }
+          },
+          "material_graph": {
+            "primary_material": "plastic",
+            "component_count": 1
+          },
+          "kinematic_joints": null,
+          "perceptual_signature": {
+            "dhash_hex": "294c8e868e8e0620",
+            "phash_hex": "e55e9a747878648a",
+            "color_histogram_hash": "0xE6E6E6E4E4E4E4E4E4E2E2E2F0F0F070C07C6ABE76F0F0F0F0F0F061B96D5AB767F0F0F0F0F0F0ECECECECECECF0F0F0",
+            "keyframe_timestamp_ms": null,
+            "variance_tolerance_pct": 5.0,
+            "region_of_interest": null,
+            "optical_flow_stable": true
+          },
+          "related_skbs": []
+        },
+        "layer_3_affordance": {
+          "action_schema": {
+            "primitive_id": "PICK_VERTICAL",
+            "parameters": {
+              "target_pose_relative": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.05,
+                "qx": 0.0,
+                "qy": 0.0,
+                "qz": 0.0,
+                "qw": 1.0
+              },
+              "force_profile": {
+                "max_grip_newtons": 10.0,
+                "lateral_torque_limit_nm": 0.5,
+                "compliance_stiffness": null
+              },
+              "speed_profile": "FINE"
+            },
+            "validation_signature": null,
+            "execution_narrative": [],
+            "failure_modes": [
+              "Object slipped during grasp",
+              "Orientation error > 15 deg (Orientation matters for cylinder grasp.)"
+            ]
+          }
+        },
+        "layer_4_safety": {
+          "hazard_class": "NONE",
+          "ppe_required": [],
+          "regulatory_certifications": [],
+          "operating_constraints": {
+            "max_speed_mm_s": 250.0,
+            "max_force_n": 10.0,
+            "restricted_zones": []
+          },
+          "enterprise_license": null,
+          "export_restrictions": null
+        },
+        "recovery_metadata": null,
+        "amendments": [],
+        "telemetry": {
+          "target_controller": "franka_panda_eval_cell",
+          "transport_layer": "ROS2_Humble",
+          "end_effector": "franka_hand",
+          "slow_path_latency_ms": 0.0,
+          "fast_path_latency_ms": 0.0,
+          "pipeline_status": "FAST_PATH_ACTIVE"
+        },
+        "control_loop": {
+          "vision_hashed": true,
+          "vlm_inference_completed": false,
+          "digital_twin_simulated": false,
+          "ram_cache_updated": true
+        }
+      },
+      "phash_hex": null,
+      "ppp_256": null,
+      "promoted": false
+    },
+    "0x2B55284D4C966004": {
+      "skb_data": {
+        "@context": {
+          "gcp": "https://schema.metavolve.io/gcp/2.0/",
+          "ros2": "https://docs.ros.org/en/humble/",
+          "schema": "https://schema.org/"
+        },
+        "schema_version": "2.0-GCP-ROBOTICS",
+        "agent": "Batch_Registry_Builder",
+        "timestamps": {
+          "state_encountered": "2026-02-17T09:10:45.832736Z",
+          "schema_generated": "2026-02-17T09:10:45.832736Z",
+          "promoted_to_fast_path": null
+        },
+        "identifiers": {
+          "uuid": "b976fb0e-cfa4-4c6b-9e78-4ab0f8f148a0",
+          "artifact_id": "geo-pyramid_yellow_50mm",
+          "codex_id": "GCP-GEO-PYRAMID_YELLOW_50MM"
+        },
+        "triple_hash": {
+          "content_hash_sha256": "9048496a7e06cddcb52d9b2d0945faaf750ae0de797b670266f84087437d851d",
+          "ppp_256bit": "a2770a6988e9219b2259ca616de6dd98dd08f5a4d506d506f586d58ed59eb596",
+          "soulmark_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "fast_path_dhash_64bit": "2b55284d4c966004"
+        },
+        "layer_1_provenance": {
+          "manufacturer": "Standard Evaluation Template",
+          "model_no": "pyramid_yellow_50mm",
+          "serial": "geo-pyramid_yellow_50mm-b976fb0e",
+          "calibration_date": null,
+          "maintenance_schedule": null,
+          "workspace_zone": "evaluation_tabletop",
+          "lighting_condition": null,
+          "source_dataset": "geometric_primitives_v1",
+          "enrichment_timestamp": "2026-02-17T09:10:45.832736Z",
+          "enrichment_model_version": "batch-registry-builder-1.0"
+        },
+        "layer_2_semantic_topology": {
+          "object_classification": "Rigid_Body_Graspable",
+          "physical_properties": {
+            "estimated_mass_kg": 0.042,
+            "center_of_mass_offset": null,
+            "friction_coefficient": 0.4,
+            "dimensions": {
+              "x": 0.05,
+              "y": 0.05,
+              "z": 0.05
+            }
+          },
+          "material_graph": {
+            "primary_material": "plastic",
+            "component_count": 1
+          },
+          "kinematic_joints": null,
+          "perceptual_signature": {
+            "dhash_hex": "2b55284d4c966004",
+            "phash_hex": "a20a892166de7ddd",
+            "color_histogram_hash": "0xE3E3E3E1E1E1E2E2E2E6E6E6F0F0F0E8E6D6E5E2CAF0F0F0F0F0F0D7CF8CD4CB7DF0F0F0F0F0F0F0F0F0F0F0F0F0F0F0",
+            "keyframe_timestamp_ms": null,
+            "variance_tolerance_pct": 5.0,
+            "region_of_interest": null,
+            "optical_flow_stable": true
+          },
+          "related_skbs": []
+        },
+        "layer_3_affordance": {
+          "action_schema": {
+            "primitive_id": "PICK_ANGLED",
+            "parameters": {
+              "target_pose_relative": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.05,
+                "qx": 0.0,
+                "qy": 0.0,
+                "qz": 0.0,
+                "qw": 1.0
+              },
+              "force_profile": {
+                "max_grip_newtons": 10.0,
+                "lateral_torque_limit_nm": 0.2,
+                "compliance_stiffness": null
+              },
+              "speed_profile": "FINE"
+            },
+            "validation_signature": null,
+            "execution_narrative": [],
+            "failure_modes": [
+              "Object slipped during grasp",
+              "Orientation error > 15 deg (Sharp apex. Angled approach required.)"
+            ]
+          }
+        },
+        "layer_4_safety": {
+          "hazard_class": "SHARP_EDGES",
+          "ppe_required": [
+            "safety_glasses"
+          ],
+          "regulatory_certifications": [],
+          "operating_constraints": {
+            "max_speed_mm_s": 250.0,
+            "max_force_n": 10.0,
+            "restricted_zones": []
+          },
+          "enterprise_license": null,
+          "export_restrictions": null
+        },
+        "recovery_metadata": null,
+        "amendments": [],
+        "telemetry": {
+          "target_controller": "franka_panda_eval_cell",
+          "transport_layer": "ROS2_Humble",
+          "end_effector": "franka_hand",
+          "slow_path_latency_ms": 0.0,
+          "fast_path_latency_ms": 0.0,
+          "pipeline_status": "FAST_PATH_ACTIVE"
+        },
+        "control_loop": {
+          "vision_hashed": true,
+          "vlm_inference_completed": false,
+          "digital_twin_simulated": false,
+          "ram_cache_updated": true
+        }
+      },
+      "phash_hex": "0xA20A892166DE7DDD",
+      "ppp_256": "0xA2770A6988E9219B2259CA616DE6DD98DD08F5A4D506D506F586D58ED59EB596",
+      "promoted": false
+    },
+    "0x2B55284D4C966804": {
+      "skb_data": {
+        "@context": {
+          "gcp": "https://schema.metavolve.io/gcp/2.0/",
+          "ros2": "https://docs.ros.org/en/humble/",
+          "schema": "https://schema.org/"
+        },
+        "schema_version": "2.0-GCP-ROBOTICS",
+        "agent": "Batch_Registry_Builder",
+        "timestamps": {
+          "state_encountered": "2026-02-17T09:10:45.832736Z",
+          "schema_generated": "2026-02-17T09:10:45.832736Z",
+          "promoted_to_fast_path": null
+        },
+        "identifiers": {
+          "uuid": "b976fb0e-cfa4-4c6b-9e78-4ab0f8f148a0",
+          "artifact_id": "geo-pyramid_yellow_50mm",
+          "codex_id": "GCP-GEO-PYRAMID_YELLOW_50MM"
+        },
+        "triple_hash": {
+          "content_hash_sha256": "9048496a7e06cddcb52d9b2d0945faaf750ae0de797b670266f84087437d851d",
+          "ppp_256bit": "a2770a6988e9219b2259ca616de6dd98dd08f5a4d506d506f586d58ed59eb596",
+          "soulmark_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "fast_path_dhash_64bit": "2b55284d4c966004"
+        },
+        "layer_1_provenance": {
+          "manufacturer": "Standard Evaluation Template",
+          "model_no": "pyramid_yellow_50mm",
+          "serial": "geo-pyramid_yellow_50mm-b976fb0e",
+          "calibration_date": null,
+          "maintenance_schedule": null,
+          "workspace_zone": "evaluation_tabletop",
+          "lighting_condition": null,
+          "source_dataset": "geometric_primitives_v1",
+          "enrichment_timestamp": "2026-02-17T09:10:45.832736Z",
+          "enrichment_model_version": "batch-registry-builder-1.0"
+        },
+        "layer_2_semantic_topology": {
+          "object_classification": "Rigid_Body_Graspable",
+          "physical_properties": {
+            "estimated_mass_kg": 0.042,
+            "center_of_mass_offset": null,
+            "friction_coefficient": 0.4,
+            "dimensions": {
+              "x": 0.05,
+              "y": 0.05,
+              "z": 0.05
+            }
+          },
+          "material_graph": {
+            "primary_material": "plastic",
+            "component_count": 1
+          },
+          "kinematic_joints": null,
+          "perceptual_signature": {
+            "dhash_hex": "2b55284d4c966004",
+            "phash_hex": "a20a892166de7ddd",
+            "color_histogram_hash": "0xE3E3E3E1E1E1E2E2E2E6E6E6F0F0F0E8E6D6E5E2CAF0F0F0F0F0F0D7CF8CD4CB7DF0F0F0F0F0F0F0F0F0F0F0F0F0F0F0",
+            "keyframe_timestamp_ms": null,
+            "variance_tolerance_pct": 5.0,
+            "region_of_interest": null,
+            "optical_flow_stable": true
+          },
+          "related_skbs": []
+        },
+        "layer_3_affordance": {
+          "action_schema": {
+            "primitive_id": "PICK_ANGLED",
+            "parameters": {
+              "target_pose_relative": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.05,
+                "qx": 0.0,
+                "qy": 0.0,
+                "qz": 0.0,
+                "qw": 1.0
+              },
+              "force_profile": {
+                "max_grip_newtons": 10.0,
+                "lateral_torque_limit_nm": 0.2,
+                "compliance_stiffness": null
+              },
+              "speed_profile": "FINE"
+            },
+            "validation_signature": null,
+            "execution_narrative": [],
+            "failure_modes": [
+              "Object slipped during grasp",
+              "Orientation error > 15 deg (Sharp apex. Angled approach required.)"
+            ]
+          }
+        },
+        "layer_4_safety": {
+          "hazard_class": "SHARP_EDGES",
+          "ppe_required": [
+            "safety_glasses"
+          ],
+          "regulatory_certifications": [],
+          "operating_constraints": {
+            "max_speed_mm_s": 250.0,
+            "max_force_n": 10.0,
+            "restricted_zones": []
+          },
+          "enterprise_license": null,
+          "export_restrictions": null
+        },
+        "recovery_metadata": null,
+        "amendments": [],
+        "telemetry": {
+          "target_controller": "franka_panda_eval_cell",
+          "transport_layer": "ROS2_Humble",
+          "end_effector": "franka_hand",
+          "slow_path_latency_ms": 0.0,
+          "fast_path_latency_ms": 0.0,
+          "pipeline_status": "FAST_PATH_ACTIVE"
+        },
+        "control_loop": {
+          "vision_hashed": true,
+          "vlm_inference_completed": false,
+          "digital_twin_simulated": false,
+          "ram_cache_updated": true
+        }
+      },
+      "phash_hex": null,
+      "ppp_256": null,
+      "promoted": false
+    },
+    "0x2B55284D0E966804": {
+      "skb_data": {
+        "@context": {
+          "gcp": "https://schema.metavolve.io/gcp/2.0/",
+          "ros2": "https://docs.ros.org/en/humble/",
+          "schema": "https://schema.org/"
+        },
+        "schema_version": "2.0-GCP-ROBOTICS",
+        "agent": "Batch_Registry_Builder",
+        "timestamps": {
+          "state_encountered": "2026-02-17T09:10:45.832736Z",
+          "schema_generated": "2026-02-17T09:10:45.832736Z",
+          "promoted_to_fast_path": null
+        },
+        "identifiers": {
+          "uuid": "b976fb0e-cfa4-4c6b-9e78-4ab0f8f148a0",
+          "artifact_id": "geo-pyramid_yellow_50mm",
+          "codex_id": "GCP-GEO-PYRAMID_YELLOW_50MM"
+        },
+        "triple_hash": {
+          "content_hash_sha256": "9048496a7e06cddcb52d9b2d0945faaf750ae0de797b670266f84087437d851d",
+          "ppp_256bit": "a2770a6988e9219b2259ca616de6dd98dd08f5a4d506d506f586d58ed59eb596",
+          "soulmark_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "fast_path_dhash_64bit": "2b55284d4c966004"
+        },
+        "layer_1_provenance": {
+          "manufacturer": "Standard Evaluation Template",
+          "model_no": "pyramid_yellow_50mm",
+          "serial": "geo-pyramid_yellow_50mm-b976fb0e",
+          "calibration_date": null,
+          "maintenance_schedule": null,
+          "workspace_zone": "evaluation_tabletop",
+          "lighting_condition": null,
+          "source_dataset": "geometric_primitives_v1",
+          "enrichment_timestamp": "2026-02-17T09:10:45.832736Z",
+          "enrichment_model_version": "batch-registry-builder-1.0"
+        },
+        "layer_2_semantic_topology": {
+          "object_classification": "Rigid_Body_Graspable",
+          "physical_properties": {
+            "estimated_mass_kg": 0.042,
+            "center_of_mass_offset": null,
+            "friction_coefficient": 0.4,
+            "dimensions": {
+              "x": 0.05,
+              "y": 0.05,
+              "z": 0.05
+            }
+          },
+          "material_graph": {
+            "primary_material": "plastic",
+            "component_count": 1
+          },
+          "kinematic_joints": null,
+          "perceptual_signature": {
+            "dhash_hex": "2b55284d4c966004",
+            "phash_hex": "a20a892166de7ddd",
+            "color_histogram_hash": "0xE3E3E3E1E1E1E2E2E2E6E6E6F0F0F0E8E6D6E5E2CAF0F0F0F0F0F0D7CF8CD4CB7DF0F0F0F0F0F0F0F0F0F0F0F0F0F0F0",
+            "keyframe_timestamp_ms": null,
+            "variance_tolerance_pct": 5.0,
+            "region_of_interest": null,
+            "optical_flow_stable": true
+          },
+          "related_skbs": []
+        },
+        "layer_3_affordance": {
+          "action_schema": {
+            "primitive_id": "PICK_ANGLED",
+            "parameters": {
+              "target_pose_relative": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.05,
+                "qx": 0.0,
+                "qy": 0.0,
+                "qz": 0.0,
+                "qw": 1.0
+              },
+              "force_profile": {
+                "max_grip_newtons": 10.0,
+                "lateral_torque_limit_nm": 0.2,
+                "compliance_stiffness": null
+              },
+              "speed_profile": "FINE"
+            },
+            "validation_signature": null,
+            "execution_narrative": [],
+            "failure_modes": [
+              "Object slipped during grasp",
+              "Orientation error > 15 deg (Sharp apex. Angled approach required.)"
+            ]
+          }
+        },
+        "layer_4_safety": {
+          "hazard_class": "SHARP_EDGES",
+          "ppe_required": [
+            "safety_glasses"
+          ],
+          "regulatory_certifications": [],
+          "operating_constraints": {
+            "max_speed_mm_s": 250.0,
+            "max_force_n": 10.0,
+            "restricted_zones": []
+          },
+          "enterprise_license": null,
+          "export_restrictions": null
+        },
+        "recovery_metadata": null,
+        "amendments": [],
+        "telemetry": {
+          "target_controller": "franka_panda_eval_cell",
+          "transport_layer": "ROS2_Humble",
+          "end_effector": "franka_hand",
+          "slow_path_latency_ms": 0.0,
+          "fast_path_latency_ms": 0.0,
+          "pipeline_status": "FAST_PATH_ACTIVE"
+        },
+        "control_loop": {
+          "vision_hashed": true,
+          "vlm_inference_completed": false,
+          "digital_twin_simulated": false,
+          "ram_cache_updated": true
+        }
+      },
+      "phash_hex": null,
+      "ppp_256": null,
+      "promoted": false
+    },
+    "0x676B901E23164002": {
+      "skb_data": {
+        "@context": {
+          "gcp": "https://schema.metavolve.io/gcp/2.0/",
+          "ros2": "https://docs.ros.org/en/humble/",
+          "schema": "https://schema.org/"
+        },
+        "schema_version": "2.0-GCP-ROBOTICS",
+        "agent": "Batch_Registry_Builder",
+        "timestamps": {
+          "state_encountered": "2026-02-17T09:10:45.832853Z",
+          "schema_generated": "2026-02-17T09:10:45.832853Z",
+          "promoted_to_fast_path": null
+        },
+        "identifiers": {
+          "uuid": "f269653e-3a8b-4a7c-9de5-e273f8e5a05c",
+          "artifact_id": "geo-l_bracket_white_80x60mm",
+          "codex_id": "GCP-GEO-L_BRACKET_WHITE_80X60MM"
+        },
+        "triple_hash": {
+          "content_hash_sha256": "5de004d167e6ce3253973799fa2b57e7aa894faffe71028712001110901cb17e",
+          "ppp_256bit": "b87c2bdc87976f792d3c989cb88cc70bc703f421d00ed082f063d063d6e3d667",
+          "soulmark_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "fast_path_dhash_64bit": "676b901e23164002"
+        },
+        "layer_1_provenance": {
+          "manufacturer": "Standard Evaluation Template",
+          "model_no": "l_bracket_white_80x60mm",
+          "serial": "geo-l_bracket_white_80x60mm-f269653e",
+          "calibration_date": null,
+          "maintenance_schedule": null,
+          "workspace_zone": "evaluation_tabletop",
+          "lighting_condition": null,
+          "source_dataset": "geometric_primitives_v1",
+          "enrichment_timestamp": "2026-02-17T09:10:45.832853Z",
+          "enrichment_model_version": "batch-registry-builder-1.0"
+        },
+        "layer_2_semantic_topology": {
+          "object_classification": "Tool",
+          "physical_properties": {
+            "estimated_mass_kg": 0.095,
+            "center_of_mass_offset": null,
+            "friction_coefficient": 0.3,
+            "dimensions": {
+              "x": 0.08,
+              "y": 0.06,
+              "z": 0.04
+            }
+          },
+          "material_graph": {
+            "primary_material": "metal",
+            "component_count": 1
+          },
+          "kinematic_joints": null,
+          "perceptual_signature": {
+            "dhash_hex": "676b901e23164002",
+            "phash_hex": "b82b876f2998b8c6",
+            "color_histogram_hash": "0xE2E2E2E0E0E0DFDFDFEAEAEAF0F0F0D4D4D4E5E5E5EFEFEFF0F0F0D5D5D5D8D8D8ECECECF0F0F0F0F0F0F0F0F0F0F0F0",
+            "keyframe_timestamp_ms": null,
+            "variance_tolerance_pct": 5.0,
+            "region_of_interest": null,
+            "optical_flow_stable": true
+          },
+          "related_skbs": []
+        },
+        "layer_3_affordance": {
+          "action_schema": {
+            "primitive_id": "GRASP_PARALLEL_JAW",
+            "parameters": {
+              "target_pose_relative": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.05,
+                "qx": 0.0,
+                "qy": 0.0,
+                "qz": 0.0,
+                "qw": 1.0
+              },
+              "force_profile": {
+                "max_grip_newtons": 10.0,
+                "lateral_torque_limit_nm": 0.5,
+                "compliance_stiffness": null
+              },
+              "speed_profile": "FINE"
+            },
+            "validation_signature": null,
+            "execution_narrative": [],
+            "failure_modes": [
+              "Object slipped during grasp",
+              "Orientation error > 15 deg (Asymmetric centre of mass. Requires offset grip.)"
+            ]
+          }
+        },
+        "layer_4_safety": {
+          "hazard_class": "SHARP_EDGES",
+          "ppe_required": [
+            "safety_glasses"
+          ],
+          "regulatory_certifications": [],
+          "operating_constraints": {
+            "max_speed_mm_s": 250.0,
+            "max_force_n": 10.0,
+            "restricted_zones": []
+          },
+          "enterprise_license": null,
+          "export_restrictions": null
+        },
+        "recovery_metadata": null,
+        "amendments": [],
+        "telemetry": {
+          "target_controller": "franka_panda_eval_cell",
+          "transport_layer": "ROS2_Humble",
+          "end_effector": "franka_hand",
+          "slow_path_latency_ms": 0.0,
+          "fast_path_latency_ms": 0.0,
+          "pipeline_status": "FAST_PATH_ACTIVE"
+        },
+        "control_loop": {
+          "vision_hashed": true,
+          "vlm_inference_completed": false,
+          "digital_twin_simulated": false,
+          "ram_cache_updated": true
+        }
+      },
+      "phash_hex": "0xB82B876F2998B8C6",
+      "ppp_256": "0xB87C2BDC87976F792D3C989CB88CC70BC703F421D00ED082F063D063D6E3D667",
+      "promoted": false
+    },
+    "0x676F101B2B174002": {
+      "skb_data": {
+        "@context": {
+          "gcp": "https://schema.metavolve.io/gcp/2.0/",
+          "ros2": "https://docs.ros.org/en/humble/",
+          "schema": "https://schema.org/"
+        },
+        "schema_version": "2.0-GCP-ROBOTICS",
+        "agent": "Batch_Registry_Builder",
+        "timestamps": {
+          "state_encountered": "2026-02-17T09:10:45.832853Z",
+          "schema_generated": "2026-02-17T09:10:45.832853Z",
+          "promoted_to_fast_path": null
+        },
+        "identifiers": {
+          "uuid": "f269653e-3a8b-4a7c-9de5-e273f8e5a05c",
+          "artifact_id": "geo-l_bracket_white_80x60mm",
+          "codex_id": "GCP-GEO-L_BRACKET_WHITE_80X60MM"
+        },
+        "triple_hash": {
+          "content_hash_sha256": "5de004d167e6ce3253973799fa2b57e7aa894faffe71028712001110901cb17e",
+          "ppp_256bit": "b87c2bdc87976f792d3c989cb88cc70bc703f421d00ed082f063d063d6e3d667",
+          "soulmark_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "fast_path_dhash_64bit": "676b901e23164002"
+        },
+        "layer_1_provenance": {
+          "manufacturer": "Standard Evaluation Template",
+          "model_no": "l_bracket_white_80x60mm",
+          "serial": "geo-l_bracket_white_80x60mm-f269653e",
+          "calibration_date": null,
+          "maintenance_schedule": null,
+          "workspace_zone": "evaluation_tabletop",
+          "lighting_condition": null,
+          "source_dataset": "geometric_primitives_v1",
+          "enrichment_timestamp": "2026-02-17T09:10:45.832853Z",
+          "enrichment_model_version": "batch-registry-builder-1.0"
+        },
+        "layer_2_semantic_topology": {
+          "object_classification": "Tool",
+          "physical_properties": {
+            "estimated_mass_kg": 0.095,
+            "center_of_mass_offset": null,
+            "friction_coefficient": 0.3,
+            "dimensions": {
+              "x": 0.08,
+              "y": 0.06,
+              "z": 0.04
+            }
+          },
+          "material_graph": {
+            "primary_material": "metal",
+            "component_count": 1
+          },
+          "kinematic_joints": null,
+          "perceptual_signature": {
+            "dhash_hex": "676b901e23164002",
+            "phash_hex": "b82b876f2998b8c6",
+            "color_histogram_hash": "0xE2E2E2E0E0E0DFDFDFEAEAEAF0F0F0D4D4D4E5E5E5EFEFEFF0F0F0D5D5D5D8D8D8ECECECF0F0F0F0F0F0F0F0F0F0F0F0",
+            "keyframe_timestamp_ms": null,
+            "variance_tolerance_pct": 5.0,
+            "region_of_interest": null,
+            "optical_flow_stable": true
+          },
+          "related_skbs": []
+        },
+        "layer_3_affordance": {
+          "action_schema": {
+            "primitive_id": "GRASP_PARALLEL_JAW",
+            "parameters": {
+              "target_pose_relative": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.05,
+                "qx": 0.0,
+                "qy": 0.0,
+                "qz": 0.0,
+                "qw": 1.0
+              },
+              "force_profile": {
+                "max_grip_newtons": 10.0,
+                "lateral_torque_limit_nm": 0.5,
+                "compliance_stiffness": null
+              },
+              "speed_profile": "FINE"
+            },
+            "validation_signature": null,
+            "execution_narrative": [],
+            "failure_modes": [
+              "Object slipped during grasp",
+              "Orientation error > 15 deg (Asymmetric centre of mass. Requires offset grip.)"
+            ]
+          }
+        },
+        "layer_4_safety": {
+          "hazard_class": "SHARP_EDGES",
+          "ppe_required": [
+            "safety_glasses"
+          ],
+          "regulatory_certifications": [],
+          "operating_constraints": {
+            "max_speed_mm_s": 250.0,
+            "max_force_n": 10.0,
+            "restricted_zones": []
+          },
+          "enterprise_license": null,
+          "export_restrictions": null
+        },
+        "recovery_metadata": null,
+        "amendments": [],
+        "telemetry": {
+          "target_controller": "franka_panda_eval_cell",
+          "transport_layer": "ROS2_Humble",
+          "end_effector": "franka_hand",
+          "slow_path_latency_ms": 0.0,
+          "fast_path_latency_ms": 0.0,
+          "pipeline_status": "FAST_PATH_ACTIVE"
+        },
+        "control_loop": {
+          "vision_hashed": true,
+          "vlm_inference_completed": false,
+          "digital_twin_simulated": false,
+          "ram_cache_updated": true
+        }
+      },
+      "phash_hex": null,
+      "ppp_256": null,
+      "promoted": false
+    },
+    "0x676F181B2B034400": {
+      "skb_data": {
+        "@context": {
+          "gcp": "https://schema.metavolve.io/gcp/2.0/",
+          "ros2": "https://docs.ros.org/en/humble/",
+          "schema": "https://schema.org/"
+        },
+        "schema_version": "2.0-GCP-ROBOTICS",
+        "agent": "Batch_Registry_Builder",
+        "timestamps": {
+          "state_encountered": "2026-02-17T09:10:45.832853Z",
+          "schema_generated": "2026-02-17T09:10:45.832853Z",
+          "promoted_to_fast_path": null
+        },
+        "identifiers": {
+          "uuid": "f269653e-3a8b-4a7c-9de5-e273f8e5a05c",
+          "artifact_id": "geo-l_bracket_white_80x60mm",
+          "codex_id": "GCP-GEO-L_BRACKET_WHITE_80X60MM"
+        },
+        "triple_hash": {
+          "content_hash_sha256": "5de004d167e6ce3253973799fa2b57e7aa894faffe71028712001110901cb17e",
+          "ppp_256bit": "b87c2bdc87976f792d3c989cb88cc70bc703f421d00ed082f063d063d6e3d667",
+          "soulmark_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "fast_path_dhash_64bit": "676b901e23164002"
+        },
+        "layer_1_provenance": {
+          "manufacturer": "Standard Evaluation Template",
+          "model_no": "l_bracket_white_80x60mm",
+          "serial": "geo-l_bracket_white_80x60mm-f269653e",
+          "calibration_date": null,
+          "maintenance_schedule": null,
+          "workspace_zone": "evaluation_tabletop",
+          "lighting_condition": null,
+          "source_dataset": "geometric_primitives_v1",
+          "enrichment_timestamp": "2026-02-17T09:10:45.832853Z",
+          "enrichment_model_version": "batch-registry-builder-1.0"
+        },
+        "layer_2_semantic_topology": {
+          "object_classification": "Tool",
+          "physical_properties": {
+            "estimated_mass_kg": 0.095,
+            "center_of_mass_offset": null,
+            "friction_coefficient": 0.3,
+            "dimensions": {
+              "x": 0.08,
+              "y": 0.06,
+              "z": 0.04
+            }
+          },
+          "material_graph": {
+            "primary_material": "metal",
+            "component_count": 1
+          },
+          "kinematic_joints": null,
+          "perceptual_signature": {
+            "dhash_hex": "676b901e23164002",
+            "phash_hex": "b82b876f2998b8c6",
+            "color_histogram_hash": "0xE2E2E2E0E0E0DFDFDFEAEAEAF0F0F0D4D4D4E5E5E5EFEFEFF0F0F0D5D5D5D8D8D8ECECECF0F0F0F0F0F0F0F0F0F0F0F0",
+            "keyframe_timestamp_ms": null,
+            "variance_tolerance_pct": 5.0,
+            "region_of_interest": null,
+            "optical_flow_stable": true
+          },
+          "related_skbs": []
+        },
+        "layer_3_affordance": {
+          "action_schema": {
+            "primitive_id": "GRASP_PARALLEL_JAW",
+            "parameters": {
+              "target_pose_relative": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.05,
+                "qx": 0.0,
+                "qy": 0.0,
+                "qz": 0.0,
+                "qw": 1.0
+              },
+              "force_profile": {
+                "max_grip_newtons": 10.0,
+                "lateral_torque_limit_nm": 0.5,
+                "compliance_stiffness": null
+              },
+              "speed_profile": "FINE"
+            },
+            "validation_signature": null,
+            "execution_narrative": [],
+            "failure_modes": [
+              "Object slipped during grasp",
+              "Orientation error > 15 deg (Asymmetric centre of mass. Requires offset grip.)"
+            ]
+          }
+        },
+        "layer_4_safety": {
+          "hazard_class": "SHARP_EDGES",
+          "ppe_required": [
+            "safety_glasses"
+          ],
+          "regulatory_certifications": [],
+          "operating_constraints": {
+            "max_speed_mm_s": 250.0,
+            "max_force_n": 10.0,
+            "restricted_zones": []
+          },
+          "enterprise_license": null,
+          "export_restrictions": null
+        },
+        "recovery_metadata": null,
+        "amendments": [],
+        "telemetry": {
+          "target_controller": "franka_panda_eval_cell",
+          "transport_layer": "ROS2_Humble",
+          "end_effector": "franka_hand",
+          "slow_path_latency_ms": 0.0,
+          "fast_path_latency_ms": 0.0,
+          "pipeline_status": "FAST_PATH_ACTIVE"
+        },
+        "control_loop": {
+          "vision_hashed": true,
+          "vlm_inference_completed": false,
+          "digital_twin_simulated": false,
+          "ram_cache_updated": true
+        }
+      },
+      "phash_hex": null,
+      "ppp_256": null,
+      "promoted": false
+    }
+  },
+  "stats": {
+    "total_entries": 13,
+    "total_lookups": 5,
+    "exact_hits": 5,
+    "fuzzy_hits": 0,
+    "misses": 0,
+    "promotion_count": 0,
+    "secondary_phash_entries": 5,
+    "secondary_ppp_entries": 5
+  },
+  "promotion_log": []
+}

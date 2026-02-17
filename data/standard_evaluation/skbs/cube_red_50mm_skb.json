@@ -1,0 +1,121 @@
+{
+  "@context": {
+    "gcp": "https://schema.metavolve.io/gcp/2.0/",
+    "ros2": "https://docs.ros.org/en/humble/",
+    "schema": "https://schema.org/"
+  },
+  "schema_version": "2.0-GCP-ROBOTICS",
+  "agent": "Batch_Registry_Builder",
+  "timestamps": {
+    "state_encountered": "2026-02-17T09:10:45.832034Z",
+    "schema_generated": "2026-02-17T09:10:45.832034Z",
+    "promoted_to_fast_path": null
+  },
+  "identifiers": {
+    "uuid": "8ae44b60-26b0-4ebd-9fcc-073a4d7612d3",
+    "artifact_id": "geo-cube_red_50mm",
+    "codex_id": "GCP-GEO-CUBE_RED_50MM"
+  },
+  "triple_hash": {
+    "content_hash_sha256": "c26ab131a558491a10cf937f031c41dbf8537294ac8f9c8c94bf272ac6a0bfb0",
+    "ppp_256bit": "a58737f39e7937f325e337f361a7cb38da78c10cc90cc90c6186d90cda0cd90c",
+    "soulmark_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "fast_path_dhash_64bit": "4e69969696966906"
+  },
+  "layer_1_provenance": {
+    "manufacturer": "Standard Evaluation Template",
+    "model_no": "cube_red_50mm",
+    "serial": "geo-cube_red_50mm-8ae44b60",
+    "calibration_date": null,
+    "maintenance_schedule": null,
+    "workspace_zone": "evaluation_tabletop",
+    "lighting_condition": null,
+    "source_dataset": "geometric_primitives_v1",
+    "enrichment_timestamp": "2026-02-17T09:10:45.832034Z",
+    "enrichment_model_version": "batch-registry-builder-1.0"
+  },
+  "layer_2_semantic_topology": {
+    "object_classification": "Rigid_Body_Graspable",
+    "physical_properties": {
+      "estimated_mass_kg": 0.125,
+      "center_of_mass_offset": null,
+      "friction_coefficient": 0.4,
+      "dimensions": {
+        "x": 0.05,
+        "y": 0.05,
+        "z": 0.05
+      }
+    },
+    "material_graph": {
+      "primary_material": "plastic",
+      "component_count": 1
+    },
+    "kinematic_joints": null,
+    "perceptual_signature": {
+      "dhash_hex": "4e69969696966906",
+      "phash_hex": "a5379e37252661ca",
+      "color_histogram_hash": "0xE3E3E3E1E1E1E6E6E6F0F0F0F0F0F0CA7777C66868F0F0F0F0F0F0C66868C15757F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0",
+      "keyframe_timestamp_ms": null,
+      "variance_tolerance_pct": 5.0,
+      "region_of_interest": null,
+      "optical_flow_stable": true
+    },
+    "related_skbs": []
+  },
+  "layer_3_affordance": {
+    "action_schema": {
+      "primitive_id": "PICK_VERTICAL",
+      "parameters": {
+        "target_pose_relative": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": -0.05,
+          "qx": 0.0,
+          "qy": 0.0,
+          "qz": 0.0,
+          "qw": 1.0
+        },
+        "force_profile": {
+          "max_grip_newtons": 10.0,
+          "lateral_torque_limit_nm": 0.6,
+          "compliance_stiffness": null
+        },
+        "speed_profile": "FINE"
+      },
+      "validation_signature": null,
+      "execution_narrative": [],
+      "failure_modes": [
+        "Object slipped during grasp",
+        "Orientation error > 15 deg (Stable, easy to grasp. Default pick-and-place baseline.)"
+      ]
+    }
+  },
+  "layer_4_safety": {
+    "hazard_class": "NONE",
+    "ppe_required": [],
+    "regulatory_certifications": [],
+    "operating_constraints": {
+      "max_speed_mm_s": 250.0,
+      "max_force_n": 10.0,
+      "restricted_zones": []
+    },
+    "enterprise_license": null,
+    "export_restrictions": null
+  },
+  "recovery_metadata": null,
+  "amendments": [],
+  "telemetry": {
+    "target_controller": "franka_panda_eval_cell",
+    "transport_layer": "ROS2_Humble",
+    "end_effector": "franka_hand",
+    "slow_path_latency_ms": 0.0,
+    "fast_path_latency_ms": 0.0,
+    "pipeline_status": "FAST_PATH_ACTIVE"
+  },
+  "control_loop": {
+    "vision_hashed": true,
+    "vlm_inference_completed": false,
+    "digital_twin_simulated": false,
+    "ram_cache_updated": true
+  }
+}
