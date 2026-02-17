@@ -22,3 +22,5 @@ htmlcov/
 *.swo
 *~
 data/registry/*.json
+data/datasets/
+data/training/*.jsonl
