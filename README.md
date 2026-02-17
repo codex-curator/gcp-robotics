@@ -3,6 +3,7 @@
 **Sub-millisecond robotic perception via hash-indexed Spatial Kinematic Blueprints.**
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://python.org)
+[![Version 2.2.0](https://img.shields.io/badge/version-2.2.0-orange.svg)](https://github.com/codex-curator/gcp-robotics/releases/tag/v2.2.0)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-green.svg)](LICENSE)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18667749.svg)](https://doi.org/10.5281/zenodo.18667749)
 
@@ -61,6 +62,16 @@ This demo generates synthetic images for 5 YCB objects, then walks through every
 5. **Loop Closure** — the Slow Path result is promoted, and a re-lookup returns an instant hit
 
 No external files, API keys, or hardware required.
+
+### Simulation Benchmark Demo
+
+Compare PCO fast-path latency against a VLA baseline in a PyBullet simulation:
+
+```bash
+python examples/sim_benchmark.py --episodes 10 --frames 30
+```
+
+See [Simulation Benchmark](#simulation-benchmark) for detailed results.
 
 ### REPL Snippet (Standalone)
 
@@ -130,9 +141,9 @@ The PCO architecture is designed around a multi-layered safety model described i
 2. **Proprioceptive Pre-Tensioning** — contact stiffness (K = ΔF/Δx) must match expected material
 3. **Control Barrier Functions (CBF-QP)** — hard physics constraints enforced at 1 kHz via the formulation: `h(x) = ||p(x) - p_obs||² - R_safe² ≥ 0`
 
-> **v2.0 Implementation Status:** The current SDK implements **Layer 4 (Safety) of the SKB schema** — hazard classification, PPE requirements, force/velocity limits, and operating constraints are fully modeled in the Pydantic schema. The CBF-QP solver and real-time safety filter are **planned for v3.0** and will target RTOS deployment. The Six Sigma / SIL-2 compliance claims in the paper refer to the *theoretical joint failure probability* of the full three-layer architecture, not the current software release.
+> **v2.2 Implementation Status:** The current SDK implements **Layer 4 (Safety) of the SKB schema** — hazard classification, PPE requirements, force/velocity limits, and operating constraints are fully modeled in the Pydantic schema. The CBF-QP solver and real-time safety filter are **planned for v3.0** and will target RTOS deployment. The Six Sigma / SIL-2 compliance claims in the paper refer to the *theoretical joint failure probability* of the full three-layer architecture, not the current software release.
 >
-> **What v2.0 provides today:** Soulmark cryptographic verification (prevents poisoned blueprints), per-SKB force limits and hazard metadata, and the schema infrastructure for downstream safety enforcement.
+> **What v2.2 provides today:** Soulmark cryptographic verification (prevents poisoned blueprints), per-SKB force limits and hazard metadata, the schema infrastructure for downstream safety enforcement, a PyBullet simulation benchmark, and Vertex AI fine-tuning data generation.
 
 ### Soulmark Verification
 
@@ -145,6 +156,25 @@ verifier = SoulmarkVerifier(fleet_secret="your-fleet-key")
 result = verifier.verify_payload(skb_data)
 assert result.valid  # Payload integrity confirmed
 ```
+
+## Simulation Benchmark
+
+Run the PCO vs VLA speed comparison in a PyBullet tabletop simulation. No hardware or API keys required.
+
+```bash
+python examples/sim_benchmark.py
+```
+
+Results from a standard run:
+
+| Metric | PCO (Fast Path) | VLA Baseline |
+|--------|----------------|--------------|
+| Mean latency | 0.84 ms | 300 ms |
+| Throughput | 1,200 Hz | 3.3 Hz |
+| Hit rate | 100% | N/A |
+| **Speedup** | **357x** | — |
+
+Options: `--episodes 20 --frames 50 --gui --output report.json`
 
 ## SDK Modules
 
@@ -160,9 +190,12 @@ assert result.valid  # Payload integrity confirmed
 | `gcp_robotics/slow_path/prompts.py` | 888 | Claude API integration for SKB generation |
 | `gcp_robotics/template_env/registrar.py` | 562 | Object registration pipeline |
 | `gcp_robotics/datasets/ycb_loader.py` | 595 | 20 YCB benchmark objects |
+| `gcp_robotics/vertex_tuning.py` | 1,477 | Fine-tuning data generator (Vertex AI / Anthropic) |
+| `gcp_robotics/sim/` | 1,353 | PyBullet simulation benchmark (environment, controller, runner) |
+| `examples/sim_benchmark.py` | — | Simulation benchmark CLI |
 | `codex_ros2/` | 1,751 | 4 ROS2 nodes (Vision, Registry, SlowPath, Bridge) |
 
-**Total: ~5,800 lines of production code.**
+**Total: ~8,600 lines of production code.**
 
 ## ROS2 Integration
 
@@ -221,6 +254,19 @@ DOI: [10.5281/zenodo.18667749](https://doi.org/10.5281/zenodo.18667749)
 ## Patent Notice
 
 The Golden Codex Protocol architecture is the subject of U.S. Provisional Patent Applications No. 63/983,304 and No. 63/984,299, assigned to Metavolve Labs, Inc. This open-source license (Apache 2.0) grants rights to the software implementation; patent claims are separately licensed.
+
+## Fine-Tuning Data Generation
+
+Generate training datasets for Vertex AI (Gemini) or Anthropic fine-tuning from existing SKB + image pairs:
+
+```bash
+python gcp_robotics/vertex_tuning.py \
+  --data-dirs data/standard_evaluation data/ycb_20 \
+  --output data/training/skb_tuning_v1.jsonl \
+  --domain general_household --augment
+```
+
+Supports 5 task domains: `warehouse_picking`, `kitchen_food`, `assembly_line`, `lab_medical`, `general_household`.
 
 ## Citation
 

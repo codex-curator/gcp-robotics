@@ -1,6 +1,6 @@
 # CLAUDE.md -- GCP-Robotics SDK
 
-**What this is**: The production GCP-Robotics SDK (v2.0.1). Sub-millisecond robotic perception via hash-indexed Spatial Kinematic Blueprints. Pushed to `codex-curator/gcp-robotics` on GitHub. DOI: 10.5281/zenodo.18668113.
+**What this is**: The production GCP-Robotics SDK (v2.2.0). Sub-millisecond robotic perception via hash-indexed Spatial Kinematic Blueprints. Pushed to `codex-curator/gcp-robotics` on GitHub. DOI: 10.5281/zenodo.18668113.
 
 **Local path**: `/mnt/d/NeuralNet/golden-codex-core/`
 
@@ -32,6 +32,12 @@ gcp_robotics/
   slow_path/prompts.py    Claude API integration for SKB generation
   template_env/registrar.py  Object registration pipeline
   datasets/ycb_loader.py  20 YCB benchmark objects
+  vertex_tuning.py        Vertex AI fine-tuning data generator (1,477 lines)
+  sim/
+    __init__.py            Module init
+    environment.py         PyBullet tabletop with camera rendering (540 lines)
+    pco_controller.py      System 1/2 pipeline for sim (323 lines)
+    benchmark.py           Configurable PCO vs VLA benchmark runner (490 lines)
 
 codex_ros2/               ROS2 nodes (4 nodes, mock framework included)
   codex_nodes/            Vision, Registry, SlowPath, Bridge nodes
@@ -42,6 +48,7 @@ examples/
   demo_fast_path.py       Full PCO lifecycle demo (no hardware needed)
   fusion_poc.py           YCB -> SKB -> Registry -> Lab Kit
   batch_registry_builder.py  6-stage batch pipeline (organize/hash/enrich/sign/register/validate)
+  sim_benchmark.py        Researcher-facing PCO vs VLA sim benchmark CLI (617 lines)
   quickstart.py           Minimal usage example
 
 data/
@@ -78,6 +85,13 @@ python examples/batch_registry_builder.py --template standard_evaluation
 
 # Start the FastAPI SKB API
 uvicorn gcp_robotics.api:app --reload
+
+# Run the PCO vs VLA simulation benchmark (no hardware needed)
+python examples/sim_benchmark.py
+python examples/sim_benchmark.py --episodes 20 --frames 50 --gui
+
+# Generate Vertex AI fine-tuning data from SKBs
+python gcp_robotics/vertex_tuning.py --data-dirs data/standard_evaluation data/ycb_20 --output data/training/skb_tuning_v1.jsonl --domain general_household --augment
 
 # Run codex-lab-kit tests (separate repo)
 cd /mnt/d/NeuralNet/codex-lab-kit && python3 -m pytest tests/ -v
