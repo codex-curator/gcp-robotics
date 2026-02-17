@@ -1,62 +1,121 @@
+# ──────────────────────────────────────────────────────────────────────
+# GCP-ROBOTICS SDK — PEP 518 / 621 project metadata
+# This file supersedes setup.py (kept for legacy compatibility).
+# ──────────────────────────────────────────────────────────────────────
+
 [build-system]
 requires = ["setuptools>=68.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
+# ──────────────────────────────────────────────────────────────────────
+# Project metadata (PEP 621)
+# ──────────────────────────────────────────────────────────────────────
+
 [project]
 name = "gcp-robotics"
-version = "2.0.0"
+version = "2.1.0"
 description = "Golden Codex Protocol — Sub-millisecond robotic perception via hash-indexed Spatial Kinematic Blueprints"
 readme = "README.md"
-license = {text = "Apache-2.0"}
+license = "Apache-2.0"
 requires-python = ">=3.10"
 authors = [
-    {name = "Tad MacPherson", email = "research@iaeternum.ai"},
+    { name = "Tad MacPherson", email = "research@iaeternum.ai" },
+    { name = "Metavolve Labs" },
+]
+maintainers = [
+    { name = "Tad MacPherson", email = "research@iaeternum.ai" },
 ]
 keywords = [
     "robotics",
     "perception",
     "perceptual-hashing",
-    "VLA",
     "spatial-kinematic-blueprints",
+    "VLA",
+    "computer-vision",
+    "golden-codex-protocol",
     "ROS2",
     "control-barrier-functions",
 ]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
     "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
     "Topic :: Scientific/Engineering :: Artificial Intelligence",
     "Topic :: Scientific/Engineering :: Image Recognition",
+    "Topic :: Scientific/Engineering :: Robotics",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
 ]
+
+# ── Core dependencies ────────────────────────────────────────────────
 dependencies = [
     "pydantic>=2.0",
-    "Pillow>=9.0",
+    "Pillow>=10.0",
     "numpy>=1.24",
-    "imagehash>=4.3",
-    "httpx>=0.25",
-    "tenacity>=8.2",
 ]
 
+# ── Optional dependency groups ───────────────────────────────────────
 [project.optional-dependencies]
-llm = ["anthropic>=0.18"]
-ros2 = []
-test = ["pytest>=7.0", "pytest-asyncio>=0.21"]
-all = ["gcp-robotics[llm,test]"]
+api = [
+    "fastapi>=0.100",
+    "uvicorn[standard]>=0.22",
+    "python-multipart>=0.0.6",
+]
+llm = [
+    "anthropic>=0.18",
+]
+ros2 = []  # ROS2 (rclpy) is installed separately via colcon / rosdep
+dev = [
+    "pytest>=7.0",
+    "pytest-cov",
+    "ruff",
+]
+all = [
+    "gcp-robotics[api,llm,dev]",
+]
 
+# ── Entry points / scripts ───────────────────────────────────────────
+[project.scripts]
+gcp-api = "gcp_robotics.api:app"
+
+# ── Project URLs ─────────────────────────────────────────────────────
 [project.urls]
 Homepage = "https://iaeternum.ai/robotics"
-Documentation = "https://github.com/codex-curator/golden-codex-core"
-Repository = "https://github.com/codex-curator/golden-codex-core"
-"Research Paper" = "https://doi.org/10.5281/zenodo.18667749"
+Repository = "https://github.com/codex-curator/gcp-robotics"
+Documentation = "https://github.com/codex-curator/gcp-robotics#readme"
+Issues = "https://github.com/codex-curator/gcp-robotics/issues"
+DOI = "https://doi.org/10.5281/zenodo.18667749"
 "Lab Kit" = "https://github.com/codex-curator/codex-lab-kit"
+
+# ──────────────────────────────────────────────────────────────────────
+# Setuptools configuration
+# ──────────────────────────────────────────────────────────────────────
 
 [tool.setuptools.packages.find]
 include = ["gcp_robotics*", "codex_ros2*"]
 exclude = ["tests*", "examples*"]
 
+# ──────────────────────────────────────────────────────────────────────
+# Tool configuration
+# ──────────────────────────────────────────────────────────────────────
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "SIM"]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-asyncio_mode = "auto"
+addopts = "-v --tb=short"
+
+[tool.coverage.run]
+source = ["gcp_robotics"]
+omit = ["tests/*", "examples/*"]
