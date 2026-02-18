@@ -132,3 +132,50 @@ cd /mnt/d/NeuralNet/codex-lab-kit && python3 -m pytest tests/ -v
 ## Warning: Stale Copy
 
 `/mnt/d/NeuralNet/golden-codex-robotics/` is an older dev snapshot. It is missing `client.py`, `cache.py`, `soulmark.py`, `telemetry.py`, and `api.py`. It has `codex_lab_kit` and `codex_ros2` bundled inline (now split into separate repos). **Do not develop there.** Use this directory (`golden-codex-core`) as the canonical SDK.
+
+---
+
+## Published DOIs & References
+
+### All Published DOIs
+
+| # | Item | DOI |
+|:-:|------|-----|
+| 1 | Alexandria Aeternum (dataset) | [10.5281/zenodo.18359131](https://doi.org/10.5281/zenodo.18359131) |
+| 2 | Entropy of Recursion (paper 1) | [10.5281/zenodo.18436975](https://doi.org/10.5281/zenodo.18436975) |
+| 3 | The Density Imperative (paper 2) | [10.5281/zenodo.18667735](https://doi.org/10.5281/zenodo.18667735) |
+| 4 | Cognitive Nutrition (paper 3) | [10.5281/zenodo.18667742](https://doi.org/10.5281/zenodo.18667742) |
+| 5 | Perceptual Compute Offloading (paper 4) | [10.5281/zenodo.18667749](https://doi.org/10.5281/zenodo.18667749) |
+| 6 | codex-lab-kit v1.0.1 (software) | [10.5281/zenodo.18668110](https://doi.org/10.5281/zenodo.18668110) |
+| 7 | gcp-robotics v2.0.1 (software) | [10.5281/zenodo.18668113](https://doi.org/10.5281/zenodo.18668113) |
+| 8 | gcp-robotics v2.1.0 (software) | [10.5281/zenodo.18669470](https://doi.org/10.5281/zenodo.18669470) |
+
+### Patents
+
+- U.S. Provisional Patent Application No. 63/983,304
+- U.S. Provisional Patent Application No. 63/984,299
+- U.S. Provisional Patent Application No. 63/985,213 (CIP — Multi-Modal Provenance, Domain-Conditioned Fine-Tuning, Hierarchical Verification, Cross-Modal Reflexive Hashing; filed 02/18/2026)
+- Assigned to: Metavolve Labs, Inc.
+
+### GitHub Repositories
+
+- [codex-curator/gcp-robotics](https://github.com/codex-curator/gcp-robotics)
+- [codex-curator/codex-lab-kit](https://github.com/codex-curator/codex-lab-kit)
+
+### HuggingFace
+
+- [codex-curator/alexandria-aeternum](https://huggingface.co/datasets/codex-curator/alexandria-aeternum)
+
+### Websites
+
+- https://iaeternum.ai
+- https://iaeternum.ai/robotics
+
+### Paper Source Locations
+
+| Paper | Local Path |
+|-------|------------|
+| Entropy of Recursion | `/mnt/c/TadFile2025/Metavolve Labs/PAPERS/Entropy of Recursion/Entropy of Recursion.tex` |
+| The Density Imperative | `/mnt/c/TadFile2025/Metavolve Labs/PAPERS/The Density Imperative/the_density_imperative.tex` |
+| Cognitive Nutrition | `/mnt/c/TadFile2025/Metavolve Labs/PAPERS/Cognitive Nutrition/cognitive_nutrition_architecture.tex` |
+| Perceptual Compute Offloading | `/mnt/c/TadFile2025/Metavolve Labs/PAPERS/Perceptual Compute Offloading/perceptual_compute_offloading.tex` |

@@ -253,7 +253,7 @@ DOI: [10.5281/zenodo.18667749](https://doi.org/10.5281/zenodo.18667749)
 
 ## Patent Notice
 
-The Golden Codex Protocol architecture is the subject of U.S. Provisional Patent Applications No. 63/983,304 and No. 63/984,299, assigned to Metavolve Labs, Inc. This open-source license (Apache 2.0) grants rights to the software implementation; patent claims are separately licensed.
+The Golden Codex Protocol architecture is the subject of U.S. Provisional Patent Applications No. 63/983,304, No. 63/984,299, and No. 63/985,213, assigned to Metavolve Labs, Inc. This open-source license (Apache 2.0) grants rights to the software implementation; patent claims are separately licensed.
 
 ## Fine-Tuning Data Generation
 

@@ -36,7 +36,7 @@ Usage
       -F "end_effector=franka_hand"
 
 Copyright (c) 2026 Metavolve Labs, Inc. — Robotics R&D Division
-Patent Pending: U.S. Provisional Application No. 63/983,304 + 63/984,299
+Patent Pending: U.S. Provisional Application No. 63/983,304 + 63/984,299 + 63/985,213
 """
 
 from __future__ import annotations
