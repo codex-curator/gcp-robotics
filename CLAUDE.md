@@ -164,7 +164,7 @@ cd /mnt/d/NeuralNet/codex-lab-kit && python3 -m pytest tests/ -v
 
 ### HuggingFace
 
-- [codex-curator/alexandria-aeternum](https://huggingface.co/datasets/codex-curator/alexandria-aeternum)
+- [Metavolve-Labs/alexandria-aeternum-genesis](https://huggingface.co/datasets/Metavolve-Labs/alexandria-aeternum-genesis)
 
 ### Websites
 
